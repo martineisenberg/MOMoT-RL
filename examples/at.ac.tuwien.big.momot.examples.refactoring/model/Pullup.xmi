@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ASCII"?>
+<refactoring:RefactoringModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:refactoring="http://momot.big.tuwien.ac.at/examples/refactoring/1.0">
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <properties name="name" type="//@types.0"/>
+  <entities name="e0" specialization="//@generalizations.0 //@generalizations.1 //@generalizations.2"/>
+  <entities name="e1" specialization="//@generalizations.3 //@generalizations.4 //@generalizations.5" generalization="//@generalizations.0"/>
+  <entities name="e2" specialization="//@generalizations.15 //@generalizations.16 //@generalizations.17" generalization="//@generalizations.1"/>
+  <entities name="e3" specialization="//@generalizations.27 //@generalizations.28 //@generalizations.29" generalization="//@generalizations.2"/>
+  <entities name="e4" specialization="//@generalizations.6 //@generalizations.7 //@generalizations.8" generalization="//@generalizations.3"/>
+  <entities name="e5" specialization="//@generalizations.9 //@generalizations.10 //@generalizations.11" generalization="//@generalizations.4"/>
+  <entities name="e6" specialization="//@generalizations.12 //@generalizations.13 //@generalizations.14" generalization="//@generalizations.5"/>
+  <entities name="e7" ownedAttribute="//@properties.0" generalization="//@generalizations.6"/>
+  <entities name="e8" ownedAttribute="//@properties.1" generalization="//@generalizations.7"/>
+  <entities name="e9" ownedAttribute="//@properties.2" generalization="//@generalizations.8"/>
+  <entities name="e10" ownedAttribute="//@properties.3" generalization="//@generalizations.9"/>
+  <entities name="e11" ownedAttribute="//@properties.4" generalization="//@generalizations.10"/>
+  <entities name="e12" ownedAttribute="//@properties.5" generalization="//@generalizations.11"/>
+  <entities name="e13" ownedAttribute="//@properties.6" generalization="//@generalizations.12"/>
+  <entities name="e14" ownedAttribute="//@properties.7" generalization="//@generalizations.13"/>
+  <entities name="e15" ownedAttribute="//@properties.8" generalization="//@generalizations.14"/>
+  <entities name="e16" specialization="//@generalizations.18 //@generalizations.19 //@generalizations.20" generalization="//@generalizations.15"/>
+  <entities name="e17" specialization="//@generalizations.21 //@generalizations.22 //@generalizations.23" generalization="//@generalizations.16"/>
+  <entities name="e18" specialization="//@generalizations.24 //@generalizations.25 //@generalizations.26" generalization="//@generalizations.17"/>
+  <entities name="e19" ownedAttribute="//@properties.9" generalization="//@generalizations.18"/>
+  <entities name="e20" ownedAttribute="//@properties.10" generalization="//@generalizations.19"/>
+  <entities name="e21" ownedAttribute="//@properties.11" generalization="//@generalizations.20"/>
+  <entities name="e22" ownedAttribute="//@properties.12" generalization="//@generalizations.21"/>
+  <entities name="e23" ownedAttribute="//@properties.13" generalization="//@generalizations.22"/>
+  <entities name="e24" ownedAttribute="//@properties.14" generalization="//@generalizations.23"/>
+  <entities name="e25" ownedAttribute="//@properties.15" generalization="//@generalizations.24"/>
+  <entities name="e26" ownedAttribute="//@properties.16" generalization="//@generalizations.25"/>
+  <entities name="e27" ownedAttribute="//@properties.17" generalization="//@generalizations.26"/>
+  <entities name="e28" specialization="//@generalizations.30 //@generalizations.31 //@generalizations.32" generalization="//@generalizations.27"/>
+  <entities name="e29" specialization="//@generalizations.33 //@generalizations.34 //@generalizations.35" generalization="//@generalizations.28"/>
+  <entities name="e30" specialization="//@generalizations.36 //@generalizations.37 //@generalizations.38" generalization="//@generalizations.29"/>
+  <entities name="e31" ownedAttribute="//@properties.18" generalization="//@generalizations.30"/>
+  <entities name="e32" ownedAttribute="//@properties.19" generalization="//@generalizations.31"/>
+  <entities name="e33" ownedAttribute="//@properties.20" generalization="//@generalizations.32"/>
+  <entities name="e34" ownedAttribute="//@properties.21" generalization="//@generalizations.33"/>
+  <entities name="e35" ownedAttribute="//@properties.22" generalization="//@generalizations.34"/>
+  <entities name="e36" ownedAttribute="//@properties.23" generalization="//@generalizations.35"/>
+  <entities name="e37" ownedAttribute="//@properties.24" generalization="//@generalizations.36"/>
+  <entities name="e38" ownedAttribute="//@properties.25" generalization="//@generalizations.37"/>
+  <entities name="e39" ownedAttribute="//@properties.26" generalization="//@generalizations.38"/>
+  <types name="String"/>
+  <generalizations specific="//@entities.1" general="//@entities.0"/>
+  <generalizations specific="//@entities.2" general="//@entities.0"/>
+  <generalizations specific="//@entities.3" general="//@entities.0"/>
+  <generalizations specific="//@entities.4" general="//@entities.1"/>
+  <generalizations specific="//@entities.5" general="//@entities.1"/>
+  <generalizations specific="//@entities.6" general="//@entities.1"/>
+  <generalizations specific="//@entities.7" general="//@entities.4"/>
+  <generalizations specific="//@entities.8" general="//@entities.4"/>
+  <generalizations specific="//@entities.9" general="//@entities.4"/>
+  <generalizations specific="//@entities.10" general="//@entities.5"/>
+  <generalizations specific="//@entities.11" general="//@entities.5"/>
+  <generalizations specific="//@entities.12" general="//@entities.5"/>
+  <generalizations specific="//@entities.13" general="//@entities.6"/>
+  <generalizations specific="//@entities.14" general="//@entities.6"/>
+  <generalizations specific="//@entities.15" general="//@entities.6"/>
+  <generalizations specific="//@entities.16" general="//@entities.2"/>
+  <generalizations specific="//@entities.17" general="//@entities.2"/>
+  <generalizations specific="//@entities.18" general="//@entities.2"/>
+  <generalizations specific="//@entities.19" general="//@entities.16"/>
+  <generalizations specific="//@entities.20" general="//@entities.16"/>
+  <generalizations specific="//@entities.21" general="//@entities.16"/>
+  <generalizations specific="//@entities.22" general="//@entities.17"/>
+  <generalizations specific="//@entities.23" general="//@entities.17"/>
+  <generalizations specific="//@entities.24" general="//@entities.17"/>
+  <generalizations specific="//@entities.25" general="//@entities.18"/>
+  <generalizations specific="//@entities.26" general="//@entities.18"/>
+  <generalizations specific="//@entities.27" general="//@entities.18"/>
+  <generalizations specific="//@entities.28" general="//@entities.3"/>
+  <generalizations specific="//@entities.29" general="//@entities.3"/>
+  <generalizations specific="//@entities.30" general="//@entities.3"/>
+  <generalizations specific="//@entities.31" general="//@entities.28"/>
+  <generalizations specific="//@entities.32" general="//@entities.28"/>
+  <generalizations specific="//@entities.33" general="//@entities.28"/>
+  <generalizations specific="//@entities.34" general="//@entities.29"/>
+  <generalizations specific="//@entities.35" general="//@entities.29"/>
+  <generalizations specific="//@entities.36" general="//@entities.29"/>
+  <generalizations specific="//@entities.37" general="//@entities.30"/>
+  <generalizations specific="//@entities.38" general="//@entities.30"/>
+  <generalizations specific="//@entities.39" general="//@entities.30"/>
+</refactoring:RefactoringModel>

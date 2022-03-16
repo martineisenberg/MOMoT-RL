@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<container:ContainerModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:container="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0" nextContainer="C1">
+  <stack id="S1" topContainer="C32"/>
+  <stack id="S2" topContainer="C3"/>
+  <stack id="S3" topContainer="C19"/>
+  <stack id="S4" topContainer="C33"/>
+  <stack id="S5" topContainer="C9"/>
+  <stack id="S6" topContainer="C39"/>
+  <stack id="S7" topContainer="C2"/>
+  <stack id="S8" topContainer="C25"/>
+  <stack id="S9" topContainer="C37"/>
+  <stack id="S10" topContainer="C31"/>
+  <container id="C1" onTopOf="C28" successor="C2" on="S6"/>
+  <container id="C2" onTopOf="C8" successor="C3" on="S7"/>
+  <container id="C3" onTopOf="C18" successor="C4" on="S2"/>
+  <container id="C4" onTopOf="C23" successor="C5" on="S1"/>
+  <container id="C5" onTopOf="C4" successor="C6" on="S1"/>
+  <container id="C6" successor="C7" on="S1"/>
+  <container id="C7" onTopOf="C34" successor="C8" on="S8"/>
+  <container id="C8" successor="C9" on="S7"/>
+  <container id="C9" onTopOf="C38" successor="C10" on="S5"/>
+  <container id="C10" successor="C11" on="S4"/>
+  <container id="C11" successor="C12" on="S5"/>
+  <container id="C12" successor="C13" on="S9"/>
+  <container id="C13" onTopOf="C14" successor="C14" on="S2"/>
+  <container id="C14" onTopOf="C29" successor="C15" on="S2"/>
+  <container id="C15" onTopOf="C21" successor="C16" on="S3"/>
+  <container id="C16" onTopOf="C17" successor="C17" on="S10"/>
+  <container id="C17" onTopOf="C35" successor="C18" on="S10"/>
+  <container id="C18" onTopOf="C40" successor="C19" on="S2"/>
+  <container id="C19" onTopOf="C15" successor="C20" on="S3"/>
+  <container id="C20" onTopOf="C24" successor="C21" on="S4"/>
+  <container id="C21" successor="C22" on="S3"/>
+  <container id="C22" onTopOf="C7" successor="C23" on="S8"/>
+  <container id="C23" onTopOf="C6" successor="C24" on="S1"/>
+  <container id="C24" onTopOf="C10" successor="C25" on="S4"/>
+  <container id="C25" onTopOf="C22" successor="C26" on="S8"/>
+  <container id="C26" onTopOf="C12" successor="C27" on="S9"/>
+  <container id="C27" successor="C28" on="S10"/>
+  <container id="C28" successor="C29" on="S6"/>
+  <container id="C29" onTopOf="C30" successor="C30" on="S2"/>
+  <container id="C30" successor="C31" on="S2"/>
+  <container id="C31" onTopOf="C16" successor="C32" on="S10"/>
+  <container id="C32" onTopOf="C36" successor="C33" on="S1"/>
+  <container id="C33" onTopOf="C20" successor="C34" on="S4"/>
+  <container id="C34" successor="C35" on="S8"/>
+  <container id="C35" onTopOf="C27" successor="C36" on="S10"/>
+  <container id="C36" onTopOf="C5" successor="C37" on="S1"/>
+  <container id="C37" onTopOf="C26" successor="C38" on="S9"/>
+  <container id="C38" onTopOf="C11" successor="C39" on="S5"/>
+  <container id="C39" onTopOf="C1" successor="C40" on="S6"/>
+  <container id="C40" onTopOf="C13" on="S2"/>
+</container:ContainerModel>

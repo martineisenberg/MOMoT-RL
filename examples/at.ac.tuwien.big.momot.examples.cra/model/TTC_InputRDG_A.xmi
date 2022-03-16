@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<architecture:ClassModel 
+	xmi:version="2.0" 
+	xmlns:xmi="http://www.omg.org/XMI" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	    xmlns:architecture="http://momot.big.tuwien.ac.at/examples/icmt/architecture/1.0"
+    xsi:schemaLocation="http://momot.big.tuwien.ac.at/examples/icmt/architecture/1.0 ../metamodel/architecture.ecore">
+  <features xsi:type="architecture:Method" name="M4" dataDependency="//@features.7 //@features.8" functionalDependency="//@features.2"/>
+  <features xsi:type="architecture:Method" name="M3" dataDependency="//@features.6 //@features.7" functionalDependency="//@features.0 //@features.3"/>
+  <features xsi:type="architecture:Method" name="M2" dataDependency="//@features.4" functionalDependency="//@features.3"/>
+  <features xsi:type="architecture:Method" name="M1" dataDependency="//@features.5 //@features.7" functionalDependency="//@features.0 //@features.1"/>
+  <features xsi:type="architecture:Attribute" name="A2"/>
+  <features xsi:type="architecture:Attribute" name="A1"/>
+  <features xsi:type="architecture:Attribute" name="A4"/>
+  <features xsi:type="architecture:Attribute" name="A3"/>
+  <features xsi:type="architecture:Attribute" name="A5"/>
+</architecture:ClassModel>

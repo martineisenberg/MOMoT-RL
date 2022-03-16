@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<container:ContainerModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:container="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0" nextContainer="C1">
+  <stack id="S1" topContainer="C6"/>
+  <stack id="S2" topContainer="C2"/>
+  <stack id="S3" topContainer="C7"/>
+  <container id="C1" onTopOf="C3" successor="C2" on="S3"/>
+  <container id="C2" onTopOf="C8" successor="C3" on="S2"/>
+  <container id="C3" successor="C4" on="S3"/>
+  <container id="C4" successor="C5" on="S1"/>
+  <container id="C5" onTopOf="C4" successor="C6" on="S1"/>
+  <container id="C6" onTopOf="C5" successor="C7" on="S1"/>
+  <container id="C7" onTopOf="C1" successor="C8" on="S3"/>
+  <container id="C8" on="S2"/>
+</container:ContainerModel>

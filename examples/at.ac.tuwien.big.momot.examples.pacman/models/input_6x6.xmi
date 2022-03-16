@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PacmanGame:Game
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:PacmanGame="http://www.geodes.org/Pacman"
+    xsi:schemaLocation="http://www.geodes.org/Pacman /org.pacman/metamodel/pacman.ecore">
+  <gridnodes
+      Bottom="//@gridnodes.6"
+      Right="//@gridnodes.1"
+      Id="00"/>
+  <gridnodes
+      Bottom="//@gridnodes.7"
+      Left="//@gridnodes.0"
+      Right="//@gridnodes.2"
+      Id="01"/>
+  <gridnodes
+      Bottom="//@gridnodes.8"
+      Left="//@gridnodes.1"
+      Right="//@gridnodes.3"
+      Id="02"/>
+  <gridnodes
+      Bottom="//@gridnodes.9"
+      Left="//@gridnodes.2"
+      Right="//@gridnodes.4"
+      Id="03"/>
+  <gridnodes
+      Bottom="//@gridnodes.10"
+      Left="//@gridnodes.3"
+      Right="//@gridnodes.5"
+      Id="04"/>
+  <gridnodes
+      Bottom="//@gridnodes.11"
+      Left="//@gridnodes.4"
+      Id="05"/>
+  <gridnodes
+      Top="//@gridnodes.0"
+      Bottom="//@gridnodes.12"
+      Right="//@gridnodes.7"
+      Id="10"/>
+  <gridnodes
+      Top="//@gridnodes.1"
+      Bottom="//@gridnodes.13"
+      Left="//@gridnodes.6"
+      Right="//@gridnodes.8"
+      Id="11"/>
+  <gridnodes
+      Top="//@gridnodes.2"
+      Bottom="//@gridnodes.14"
+      Left="//@gridnodes.7"
+      Right="//@gridnodes.9"
+      Id="12"/>
+  <gridnodes
+      Top="//@gridnodes.3"
+      Bottom="//@gridnodes.15"
+      Left="//@gridnodes.8"
+      Right="//@gridnodes.10"
+      Id="13"/>
+  <gridnodes
+      Top="//@gridnodes.4"
+      Bottom="//@gridnodes.16"
+      Left="//@gridnodes.9"
+      Right="//@gridnodes.11"
+      Id="14"/>
+  <gridnodes
+      Top="//@gridnodes.5"
+      Bottom="//@gridnodes.17"
+      Left="//@gridnodes.10"
+      Id="15"/>
+  <gridnodes
+      Top="//@gridnodes.6"
+      Bottom="//@gridnodes.18"
+      Right="//@gridnodes.13"
+      Id="20"/>
+  <gridnodes
+      Top="//@gridnodes.7"
+      Bottom="//@gridnodes.19"
+      Left="//@gridnodes.12"
+      Right="//@gridnodes.14"
+      Id="21"/>
+  <gridnodes
+      Top="//@gridnodes.8"
+      Bottom="//@gridnodes.20"
+      Left="//@gridnodes.13"
+      Right="//@gridnodes.15"
+      Id="22"/>
+  <gridnodes
+      Top="//@gridnodes.9"
+      Bottom="//@gridnodes.21"
+      Left="//@gridnodes.14"
+      Right="//@gridnodes.16"
+      Id="23"/>
+  <gridnodes
+      Top="//@gridnodes.10"
+      Bottom="//@gridnodes.22"
+      Left="//@gridnodes.15"
+      Right="//@gridnodes.17"
+      Id="24"/>
+  <gridnodes
+      Top="//@gridnodes.11"
+      Bottom="//@gridnodes.23"
+      Left="//@gridnodes.16"
+      Id="25"/>
+  <gridnodes
+      Top="//@gridnodes.12"
+      Bottom="//@gridnodes.24"
+      Right="//@gridnodes.19"
+      Id="30"/>
+  <gridnodes
+      Top="//@gridnodes.13"
+      Bottom="//@gridnodes.25"
+      Left="//@gridnodes.18"
+      Right="//@gridnodes.20"
+      Id="31"/>
+  <gridnodes
+      Top="//@gridnodes.14"
+      Bottom="//@gridnodes.26"
+      Left="//@gridnodes.19"
+      Right="//@gridnodes.21"
+      Id="32"/>
+  <gridnodes
+      Top="//@gridnodes.15"
+      Bottom="//@gridnodes.27"
+      Left="//@gridnodes.20"
+      Right="//@gridnodes.22"
+      Id="33"/>
+  <gridnodes
+      Top="//@gridnodes.16"
+      Bottom="//@gridnodes.28"
+      Left="//@gridnodes.21"
+      Right="//@gridnodes.23"
+      Id="34"/>
+  <gridnodes
+      Top="//@gridnodes.17"
+      Bottom="//@gridnodes.29"
+      Left="//@gridnodes.22"
+      Id="35"/>
+  <gridnodes
+      Top="//@gridnodes.18"
+      Bottom="//@gridnodes.30"
+      Right="//@gridnodes.25"
+      Id="40"/>
+  <gridnodes
+      Top="//@gridnodes.19"
+      Bottom="//@gridnodes.31"
+      Left="//@gridnodes.24"
+      Right="//@gridnodes.26"
+      Id="41"/>
+  <gridnodes
+      Top="//@gridnodes.20"
+      Bottom="//@gridnodes.32"
+      Left="//@gridnodes.19"
+      Right="//@gridnodes.27"
+      Id="42"/>
+  <gridnodes
+      Top="//@gridnodes.21"
+      Bottom="//@gridnodes.33"
+      Left="//@gridnodes.26"
+      Right="//@gridnodes.28"
+      Id="43"/>
+  <gridnodes
+      Top="//@gridnodes.22"
+      Bottom="//@gridnodes.34"
+      Left="//@gridnodes.27"
+      Right="//@gridnodes.29"
+      Id="44"/>
+  <gridnodes
+      Top="//@gridnodes.23"
+      Bottom="//@gridnodes.35"
+      Left="//@gridnodes.28"
+      Id="45"/>
+  <gridnodes
+      Top="//@gridnodes.24"
+      Right="//@gridnodes.31"
+      Id="50"/>
+  <gridnodes
+      Top="//@gridnodes.25"
+      Left="//@gridnodes.30"
+      Right="//@gridnodes.32"
+      Id="51"/>
+  <gridnodes
+      Top="//@gridnodes.26"
+      Left="//@gridnodes.31"
+      Right="//@gridnodes.33"
+      Id="52"/>
+  <gridnodes
+      Top="//@gridnodes.27"
+      Left="//@gridnodes.32"
+      Right="//@gridnodes.34"
+      Id="53"/>
+  <gridnodes
+      Top="//@gridnodes.28"
+      Left="//@gridnodes.33"
+      Right="//@gridnodes.35"
+      Id="54"/>
+  <gridnodes
+      Top="//@gridnodes.29"
+      Left="//@gridnodes.34"
+      Id="55"/>
+  <scoreboard/>
+  <entites xsi:type="PacmanGame:Pacman"
+      On="//@gridnodes.12"
+      Id="p1"/>
+  <entites xsi:type="PacmanGame:Ghost"
+      On="//@gridnodes.7"
+      Id="g1"/>
+  <entites xsi:type="PacmanGame:Ghost"
+      On="//@gridnodes.21"
+      Id="g2"/>
+  <entites xsi:type="PacmanGame:Ghost"
+      On="//@gridnodes.17"
+      Id="g3"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.0"
+      Id="f1"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.4"
+      Id="f2"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.8"
+      Id="f3"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.14"
+      Id="f4"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.20"
+      Id="f5"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.22"
+      Id="f6"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.24"
+      Id="f7"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.27"
+      Id="f8"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.31"
+      Id="f9"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.11"
+      Id="f10"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.26"
+      Id="f11"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.23"
+      Id="f12"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.6"
+      Id="f13"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.18"
+      Id="f14"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.30"
+      Id="f15"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.1"
+      Id="f16"/>
+  <entites xsi:type="PacmanGame:Food"
+      On="//@gridnodes.32"
+      Id="f17"/>
+</PacmanGame:Game>

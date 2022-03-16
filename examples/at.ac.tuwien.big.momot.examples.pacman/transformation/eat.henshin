@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_RFJUIITqEeiDsrgzro5g-A">
+  <imports href="http://www.geodes.org/Pacman#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_RgOGkITqEeiDsrgzro5g-A" name="eat">
+    <parameters xmi:id="_eC0XkIUCEeiDsrgzro5g-A" name="score_value" kind="VAR"/>
+    <lhs xmi:id="_RgOGlYTqEeiDsrgzro5g-A" name="Lhs">
+      <nodes xmi:id="_SM4YQITqEeiDsrgzro5g-A" outgoing="_VMgyIITqEeiDsrgzro5g-A _Vc4JYITqEeiDsrgzro5g-A _VqHUIITqEeiDsrgzro5g-A _V9Aa8ITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game"/>
+      </nodes>
+      <nodes xmi:id="_S_6XsITqEeiDsrgzro5g-A" incoming="_VMgyIITqEeiDsrgzro5g-A _bmkEcITqEeiDsrgzro5g-A _b0snEITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_TW0b0ITqEeiDsrgzro5g-A" incoming="_Vc4JYITqEeiDsrgzro5g-A" outgoing="_b0snEITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Pacman"/>
+      </nodes>
+      <nodes xmi:id="_TxAdcITqEeiDsrgzro5g-A" incoming="_VqHUIITqEeiDsrgzro5g-A" outgoing="_bmkEcITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Food"/>
+      </nodes>
+      <nodes xmi:id="_ULy8AITqEeiDsrgzro5g-A" incoming="_V9Aa8ITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Scoreboard"/>
+        <attributes xmi:id="_eonMQIUCEeiDsrgzro5g-A" value="score_value">
+          <type href="http://www.geodes.org/Pacman#//Scoreboard/score"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_VMgyIITqEeiDsrgzro5g-A" source="_SM4YQITqEeiDsrgzro5g-A" target="_S_6XsITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game/gridnodes"/>
+      </edges>
+      <edges xmi:id="_Vc4JYITqEeiDsrgzro5g-A" source="_SM4YQITqEeiDsrgzro5g-A" target="_TW0b0ITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_VqHUIITqEeiDsrgzro5g-A" source="_SM4YQITqEeiDsrgzro5g-A" target="_TxAdcITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_V9Aa8ITqEeiDsrgzro5g-A" source="_SM4YQITqEeiDsrgzro5g-A" target="_ULy8AITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game/scoreboard"/>
+      </edges>
+      <edges xmi:id="_bmkEcITqEeiDsrgzro5g-A" source="_TxAdcITqEeiDsrgzro5g-A" target="_S_6XsITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//PositionableEntity/On"/>
+      </edges>
+      <edges xmi:id="_b0snEITqEeiDsrgzro5g-A" source="_TW0b0ITqEeiDsrgzro5g-A" target="_S_6XsITqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//PositionableEntity/On"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_RgOGloTqEeiDsrgzro5g-A" name="Rhs">
+      <nodes xmi:id="_SM4YQYTqEeiDsrgzro5g-A" outgoing="_VMgyIYTqEeiDsrgzro5g-A _Vc4JYYTqEeiDsrgzro5g-A _V9Aa8YTqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game"/>
+      </nodes>
+      <nodes xmi:id="_S_6XsYTqEeiDsrgzro5g-A" incoming="_VMgyIYTqEeiDsrgzro5g-A _b0snEYTqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_TW0b0YTqEeiDsrgzro5g-A" incoming="_Vc4JYYTqEeiDsrgzro5g-A" outgoing="_b0snEYTqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Pacman"/>
+      </nodes>
+      <nodes xmi:id="_ULy8AYTqEeiDsrgzro5g-A" incoming="_V9Aa8YTqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Scoreboard"/>
+        <attributes xmi:id="_eonMQYUCEeiDsrgzro5g-A" value="score_value+1">
+          <type href="http://www.geodes.org/Pacman#//Scoreboard/score"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_VMgyIYTqEeiDsrgzro5g-A" source="_SM4YQYTqEeiDsrgzro5g-A" target="_S_6XsYTqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game/gridnodes"/>
+      </edges>
+      <edges xmi:id="_Vc4JYYTqEeiDsrgzro5g-A" source="_SM4YQYTqEeiDsrgzro5g-A" target="_TW0b0YTqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_V9Aa8YTqEeiDsrgzro5g-A" source="_SM4YQYTqEeiDsrgzro5g-A" target="_ULy8AYTqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//Game/scoreboard"/>
+      </edges>
+      <edges xmi:id="_b0snEYTqEeiDsrgzro5g-A" source="_TW0b0YTqEeiDsrgzro5g-A" target="_S_6XsYTqEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//PositionableEntity/On"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_SM4YQoTqEeiDsrgzro5g-A" origin="_SM4YQITqEeiDsrgzro5g-A" image="_SM4YQYTqEeiDsrgzro5g-A"/>
+    <mappings xmi:id="_S_6XsoTqEeiDsrgzro5g-A" origin="_S_6XsITqEeiDsrgzro5g-A" image="_S_6XsYTqEeiDsrgzro5g-A"/>
+    <mappings xmi:id="_TW0b0oTqEeiDsrgzro5g-A" origin="_TW0b0ITqEeiDsrgzro5g-A" image="_TW0b0YTqEeiDsrgzro5g-A"/>
+    <mappings xmi:id="_ULy8AoTqEeiDsrgzro5g-A" origin="_ULy8AITqEeiDsrgzro5g-A" image="_ULy8AYTqEeiDsrgzro5g-A"/>
+  </units>
+</henshin:Module>

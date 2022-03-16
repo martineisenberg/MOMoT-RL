@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_LMcw4GH7Eey-Cc2NmPC8Rw" name="containerModule">
+  <imports href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_PrPa8GH8Eey-Cc2NmPC8Rw" name="relocateNonLastOnStackToEmptyStack">
+    <parameters xmi:id="_PrPa8WH8Eey-Cc2NmPC8Rw" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_PrPa8mH8Eey-Cc2NmPC8Rw" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_PrPa82H8Eey-Cc2NmPC8Rw" name="to">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_PrPa9GH8Eey-Cc2NmPC8Rw" name="Lhs">
+      <nodes xmi:id="_PrPa9mH8Eey-Cc2NmPC8Rw" incoming="_PrPa_WH8Eey-Cc2NmPC8Rw _wRQq4GH8Eey-Cc2NmPC8Rw" outgoing="_-ouqQGH9Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_PrPa92H8Eey-Cc2NmPC8Rw" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_PrPa-GH8Eey-Cc2NmPC8Rw" incoming="_-ouqQGH9Eey-Cc2NmPC8Rw" outgoing="_PrPa_WH8Eey-Cc2NmPC8Rw _PrPbBmH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_PrPa-WH8Eey-Cc2NmPC8Rw" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_PrPa-mH8Eey-Cc2NmPC8Rw" incoming="_PrPbBmH8Eey-Cc2NmPC8Rw" outgoing="_wRQq4GH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <nodes xmi:id="_PrPa-2H8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_PrPa_GH8Eey-Cc2NmPC8Rw" value="to">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_PrPa_WH8Eey-Cc2NmPC8Rw" source="_PrPa-GH8Eey-Cc2NmPC8Rw" target="_PrPa9mH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_PrPbBmH8Eey-Cc2NmPC8Rw" source="_PrPa-GH8Eey-Cc2NmPC8Rw" target="_PrPa-mH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+      </edges>
+      <edges xmi:id="_wRQq4GH8Eey-Cc2NmPC8Rw" source="_PrPa-mH8Eey-Cc2NmPC8Rw" target="_PrPa9mH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_-ouqQGH9Eey-Cc2NmPC8Rw" source="_PrPa9mH8Eey-Cc2NmPC8Rw" target="_PrPa-GH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_PrPbCmH8Eey-Cc2NmPC8Rw" name="Rhs">
+      <nodes xmi:id="_PrPbDGH8Eey-Cc2NmPC8Rw" incoming="_wRQq4WH8Eey-Cc2NmPC8Rw" outgoing="_BCjoYGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_PrPbDWH8Eey-Cc2NmPC8Rw" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_PrPbDmH8Eey-Cc2NmPC8Rw" incoming="_47UbgGH9Eey-Cc2NmPC8Rw" outgoing="_PrPbE2H8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_PrPbD2H8Eey-Cc2NmPC8Rw" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_PrPbEGH8Eey-Cc2NmPC8Rw" incoming="_BCjoYGH-Eey-Cc2NmPC8Rw" outgoing="_wRQq4WH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <nodes xmi:id="_PrPbEWH8Eey-Cc2NmPC8Rw" incoming="_PrPbE2H8Eey-Cc2NmPC8Rw" outgoing="_47UbgGH9Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_PrPbEmH8Eey-Cc2NmPC8Rw" value="to">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_PrPbE2H8Eey-Cc2NmPC8Rw" source="_PrPbDmH8Eey-Cc2NmPC8Rw" target="_PrPbEWH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_wRQq4WH8Eey-Cc2NmPC8Rw" source="_PrPbEGH8Eey-Cc2NmPC8Rw" target="_PrPbDGH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_47UbgGH9Eey-Cc2NmPC8Rw" source="_PrPbEWH8Eey-Cc2NmPC8Rw" target="_PrPbDmH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_BCjoYGH-Eey-Cc2NmPC8Rw" source="_PrPbDGH8Eey-Cc2NmPC8Rw" target="_PrPbEGH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_PrPbFWH8Eey-Cc2NmPC8Rw" origin="_PrPa9mH8Eey-Cc2NmPC8Rw" image="_PrPbDGH8Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_PrPbFmH8Eey-Cc2NmPC8Rw" origin="_PrPa-GH8Eey-Cc2NmPC8Rw" image="_PrPbDmH8Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_PrPbF2H8Eey-Cc2NmPC8Rw" origin="_PrPa-mH8Eey-Cc2NmPC8Rw" image="_PrPbEGH8Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_PrPbGGH8Eey-Cc2NmPC8Rw" origin="_PrPa-2H8Eey-Cc2NmPC8Rw" image="_PrPbEWH8Eey-Cc2NmPC8Rw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_u1bmMGH8Eey-Cc2NmPC8Rw" name="relocateNonLastOnStackToNonEmptyStack">
+    <parameters xmi:id="_u1bmMWH8Eey-Cc2NmPC8Rw" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_u1bmMmH8Eey-Cc2NmPC8Rw" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_u1bmM2H8Eey-Cc2NmPC8Rw" name="to">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_u1bmNGH8Eey-Cc2NmPC8Rw" name="Lhs">
+      <nodes xmi:id="_u1cNIGH8Eey-Cc2NmPC8Rw" incoming="_u1cNJ2H8Eey-Cc2NmPC8Rw _OfWksGH-Eey-Cc2NmPC8Rw" outgoing="_K0Ga8GH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_u1cNIWH8Eey-Cc2NmPC8Rw" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_u1cNImH8Eey-Cc2NmPC8Rw" incoming="_K0Ga8GH-Eey-Cc2NmPC8Rw" outgoing="_u1cNJ2H8Eey-Cc2NmPC8Rw _u1cNKGH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_u1cNI2H8Eey-Cc2NmPC8Rw" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_u1cNJGH8Eey-Cc2NmPC8Rw" incoming="_u1cNKGH8Eey-Cc2NmPC8Rw" outgoing="_OfWksGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <nodes xmi:id="_u1cNJWH8Eey-Cc2NmPC8Rw" incoming="_TFXtkGH-Eey-Cc2NmPC8Rw" outgoing="_WgZC8GH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_u1cNJmH8Eey-Cc2NmPC8Rw" value="to">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_SrDJEGH-Eey-Cc2NmPC8Rw" incoming="_WgZC8GH-Eey-Cc2NmPC8Rw" outgoing="_TFXtkGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_u1cNJ2H8Eey-Cc2NmPC8Rw" source="_u1cNImH8Eey-Cc2NmPC8Rw" target="_u1cNIGH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_u1cNKGH8Eey-Cc2NmPC8Rw" source="_u1cNImH8Eey-Cc2NmPC8Rw" target="_u1cNJGH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+      </edges>
+      <edges xmi:id="_K0Ga8GH-Eey-Cc2NmPC8Rw" source="_u1cNIGH8Eey-Cc2NmPC8Rw" target="_u1cNImH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_OfWksGH-Eey-Cc2NmPC8Rw" source="_u1cNJGH8Eey-Cc2NmPC8Rw" target="_u1cNIGH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_TFXtkGH-Eey-Cc2NmPC8Rw" source="_SrDJEGH-Eey-Cc2NmPC8Rw" target="_u1cNJWH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_WgZC8GH-Eey-Cc2NmPC8Rw" source="_u1cNJWH8Eey-Cc2NmPC8Rw" target="_SrDJEGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_u1cNNGH8Eey-Cc2NmPC8Rw" name="Rhs">
+      <nodes xmi:id="_u1cNNmH8Eey-Cc2NmPC8Rw" incoming="_OfWksWH-Eey-Cc2NmPC8Rw" outgoing="_PQ1sAGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_u1cNN2H8Eey-Cc2NmPC8Rw" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_u1cNOGH8Eey-Cc2NmPC8Rw" incoming="_J26Z8GH-Eey-Cc2NmPC8Rw" outgoing="_u1cNPWH8Eey-Cc2NmPC8Rw _a_Zk4GH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_u1cNOWH8Eey-Cc2NmPC8Rw" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_u1cNOmH8Eey-Cc2NmPC8Rw" incoming="_PQ1sAGH-Eey-Cc2NmPC8Rw" outgoing="_OfWksWH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <nodes xmi:id="_u1cNO2H8Eey-Cc2NmPC8Rw" incoming="_u1cNPWH8Eey-Cc2NmPC8Rw _TFXtkWH-Eey-Cc2NmPC8Rw" outgoing="_J26Z8GH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_u1cNPGH8Eey-Cc2NmPC8Rw" value="to">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_SrFlUGH-Eey-Cc2NmPC8Rw" incoming="_a_Zk4GH-Eey-Cc2NmPC8Rw" outgoing="_TFXtkWH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_u1cNPWH8Eey-Cc2NmPC8Rw" source="_u1cNOGH8Eey-Cc2NmPC8Rw" target="_u1cNO2H8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_J26Z8GH-Eey-Cc2NmPC8Rw" source="_u1cNO2H8Eey-Cc2NmPC8Rw" target="_u1cNOGH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_OfWksWH-Eey-Cc2NmPC8Rw" source="_u1cNOmH8Eey-Cc2NmPC8Rw" target="_u1cNNmH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_PQ1sAGH-Eey-Cc2NmPC8Rw" source="_u1cNNmH8Eey-Cc2NmPC8Rw" target="_u1cNOmH8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_TFXtkWH-Eey-Cc2NmPC8Rw" source="_SrFlUGH-Eey-Cc2NmPC8Rw" target="_u1cNO2H8Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_a_Zk4GH-Eey-Cc2NmPC8Rw" source="_u1cNOGH8Eey-Cc2NmPC8Rw" target="_SrFlUGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_u1cNP2H8Eey-Cc2NmPC8Rw" origin="_u1cNIGH8Eey-Cc2NmPC8Rw" image="_u1cNNmH8Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_u1cNQGH8Eey-Cc2NmPC8Rw" origin="_u1cNImH8Eey-Cc2NmPC8Rw" image="_u1cNOGH8Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_u1cNQWH8Eey-Cc2NmPC8Rw" origin="_u1cNJGH8Eey-Cc2NmPC8Rw" image="_u1cNOmH8Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_u1cNQmH8Eey-Cc2NmPC8Rw" origin="_u1cNJWH8Eey-Cc2NmPC8Rw" image="_u1cNO2H8Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_SrFlUWH-Eey-Cc2NmPC8Rw" origin="_SrDJEGH-Eey-Cc2NmPC8Rw" image="_SrFlUGH-Eey-Cc2NmPC8Rw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_kvQ8pmH-Eey-Cc2NmPC8Rw" name="relocateLastOnStackToNonEmptyStack">
+    <parameters xmi:id="_kvQ8p2H-Eey-Cc2NmPC8Rw" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_kvQ8qGH-Eey-Cc2NmPC8Rw" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_kvQ8qWH-Eey-Cc2NmPC8Rw" name="to">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_kvQ8qmH-Eey-Cc2NmPC8Rw" name="Lhs">
+      <nodes xmi:id="_kvQ8rGH-Eey-Cc2NmPC8Rw" incoming="_kvQ8tGH-Eey-Cc2NmPC8Rw" outgoing="_kvQ8tmH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_kvQ8rWH-Eey-Cc2NmPC8Rw" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_kvQ8rmH-Eey-Cc2NmPC8Rw" incoming="_kvQ8tmH-Eey-Cc2NmPC8Rw" outgoing="_kvQ8tGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_kvQ8r2H-Eey-Cc2NmPC8Rw" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_kvQ8sWH-Eey-Cc2NmPC8Rw" incoming="_kvQ8uGH-Eey-Cc2NmPC8Rw" outgoing="_kvQ8uWH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_kvQ8smH-Eey-Cc2NmPC8Rw" value="to">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_kvQ8s2H-Eey-Cc2NmPC8Rw" incoming="_kvQ8uWH-Eey-Cc2NmPC8Rw" outgoing="_kvQ8uGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_kvQ8tGH-Eey-Cc2NmPC8Rw" source="_kvQ8rmH-Eey-Cc2NmPC8Rw" target="_kvQ8rGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_kvQ8tmH-Eey-Cc2NmPC8Rw" source="_kvQ8rGH-Eey-Cc2NmPC8Rw" target="_kvQ8rmH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_kvQ8uGH-Eey-Cc2NmPC8Rw" source="_kvQ8s2H-Eey-Cc2NmPC8Rw" target="_kvQ8sWH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_kvQ8uWH-Eey-Cc2NmPC8Rw" source="_kvQ8sWH-Eey-Cc2NmPC8Rw" target="_kvQ8s2H-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_kvQ8xWH-Eey-Cc2NmPC8Rw" name="Rhs">
+      <nodes xmi:id="_kvQ8x2H-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_kvQ8yGH-Eey-Cc2NmPC8Rw" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_kvQ8yWH-Eey-Cc2NmPC8Rw" incoming="_kvQ80GH-Eey-Cc2NmPC8Rw" outgoing="_kvQ8z2H-Eey-Cc2NmPC8Rw _kvQ81GH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_kvQ8ymH-Eey-Cc2NmPC8Rw" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_kvQ8zGH-Eey-Cc2NmPC8Rw" incoming="_kvQ8z2H-Eey-Cc2NmPC8Rw _kvQ802H-Eey-Cc2NmPC8Rw" outgoing="_kvQ80GH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_kvQ8zWH-Eey-Cc2NmPC8Rw" value="to">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_kvQ8zmH-Eey-Cc2NmPC8Rw" incoming="_kvQ81GH-Eey-Cc2NmPC8Rw" outgoing="_kvQ802H-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_kvQ8z2H-Eey-Cc2NmPC8Rw" source="_kvQ8yWH-Eey-Cc2NmPC8Rw" target="_kvQ8zGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_kvQ80GH-Eey-Cc2NmPC8Rw" source="_kvQ8zGH-Eey-Cc2NmPC8Rw" target="_kvQ8yWH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_kvQ802H-Eey-Cc2NmPC8Rw" source="_kvQ8zmH-Eey-Cc2NmPC8Rw" target="_kvQ8zGH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_kvQ81GH-Eey-Cc2NmPC8Rw" source="_kvQ8yWH-Eey-Cc2NmPC8Rw" target="_kvQ8zmH-Eey-Cc2NmPC8Rw">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_kvQ81mH-Eey-Cc2NmPC8Rw" origin="_kvQ8rGH-Eey-Cc2NmPC8Rw" image="_kvQ8x2H-Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_kvQ812H-Eey-Cc2NmPC8Rw" origin="_kvQ8rmH-Eey-Cc2NmPC8Rw" image="_kvQ8yWH-Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_kvQ82WH-Eey-Cc2NmPC8Rw" origin="_kvQ8sWH-Eey-Cc2NmPC8Rw" image="_kvQ8zGH-Eey-Cc2NmPC8Rw"/>
+    <mappings xmi:id="_kvQ82mH-Eey-Cc2NmPC8Rw" origin="_kvQ8s2H-Eey-Cc2NmPC8Rw" image="_kvQ8zmH-Eey-Cc2NmPC8Rw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_gj9ToGJAEeyfft7XdzjWpg" name="checkIsLast">
+    <parameters xmi:id="_gj9ToWJAEeyfft7XdzjWpg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_h2Y_UGJVEeyfft7XdzjWpg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_gj9TomJAEeyfft7XdzjWpg" name="Lhs">
+      <nodes xmi:id="_gj9To2JAEeyfft7XdzjWpg" incoming="_eLc-oGJVEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_gj9TpGJAEeyfft7XdzjWpg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_dDvvsGJVEeyfft7XdzjWpg" outgoing="_eLc-oGJVEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_icYBQGJVEeyfft7XdzjWpg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_eLc-oGJVEeyfft7XdzjWpg" source="_dDvvsGJVEeyfft7XdzjWpg" target="_gj9To2JAEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_gj9TpWJAEeyfft7XdzjWpg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_gj9TpmJAEeyfft7XdzjWpg">
+          <conclusion xmi:id="_gj9Tp2JAEeyfft7XdzjWpg">
+            <nodes xmi:id="_gj9TqGJAEeyfft7XdzjWpg" incoming="_sXyHAGJAEeyfft7XdzjWpg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+            </nodes>
+            <nodes xmi:id="_gj9TqWJAEeyfft7XdzjWpg" outgoing="_sXyHAGJAEeyfft7XdzjWpg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+              <attributes xmi:id="_gj9TqmJAEeyfft7XdzjWpg" value="container">
+                <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_sXyHAGJAEeyfft7XdzjWpg" source="_gj9TqWJAEeyfft7XdzjWpg" target="_gj9TqGJAEeyfft7XdzjWpg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_gj9TrGJAEeyfft7XdzjWpg" origin="_gj9To2JAEeyfft7XdzjWpg" image="_gj9TqWJAEeyfft7XdzjWpg"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_gj9TrWJAEeyfft7XdzjWpg" name="Rhs">
+      <nodes xmi:id="_gj9TrmJAEeyfft7XdzjWpg" incoming="_eLc-oWJVEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_gj9Tr2JAEeyfft7XdzjWpg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_dDvvsWJVEeyfft7XdzjWpg" outgoing="_eLc-oWJVEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_icYBQWJVEeyfft7XdzjWpg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_eLc-oWJVEeyfft7XdzjWpg" source="_dDvvsWJVEeyfft7XdzjWpg" target="_gj9TrmJAEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_gj9TsGJAEeyfft7XdzjWpg" origin="_gj9To2JAEeyfft7XdzjWpg" image="_gj9TrmJAEeyfft7XdzjWpg"/>
+    <mappings xmi:id="_dDvvsmJVEeyfft7XdzjWpg" origin="_dDvvsGJVEeyfft7XdzjWpg" image="_dDvvsWJVEeyfft7XdzjWpg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_D_WOMGJBEeyfft7XdzjWpg" name="checkTargetStackEmpty">
+    <parameters xmi:id="_Q5IkEGJBEeyfft7XdzjWpg" name="stack">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_D_YqcGJBEeyfft7XdzjWpg" name="Lhs">
+      <nodes xmi:id="_HdVYAGJBEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_SfWT8GJBEeyfft7XdzjWpg" value="stack">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <formula xsi:type="henshin:Not" xmi:id="_lIraAGJWEeyfft7XdzjWpg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_lIraAWJWEeyfft7XdzjWpg">
+          <conclusion xmi:id="_lIraAmJWEeyfft7XdzjWpg">
+            <nodes xmi:id="_lIraA2JWEeyfft7XdzjWpg" outgoing="_i_YyQGJWEeyfft7XdzjWpg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+              <attributes xmi:id="_lIraBGJWEeyfft7XdzjWpg" value="stack">
+                <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_H9llYGJBEeyfft7XdzjWpg" incoming="_i_YyQGJWEeyfft7XdzjWpg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+            </nodes>
+            <edges xmi:id="_i_YyQGJWEeyfft7XdzjWpg" source="_lIraA2JWEeyfft7XdzjWpg" target="_H9llYGJBEeyfft7XdzjWpg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_lIraBWJWEeyfft7XdzjWpg" origin="_HdVYAGJBEeyfft7XdzjWpg" image="_lIraA2JWEeyfft7XdzjWpg"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_D_YqcWJBEeyfft7XdzjWpg" name="Rhs">
+      <nodes xmi:id="_HdVYAWJBEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_SfWT8WJBEeyfft7XdzjWpg" value="stack">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_HdVYAmJBEeyfft7XdzjWpg" origin="_HdVYAGJBEeyfft7XdzjWpg" image="_HdVYAWJBEeyfft7XdzjWpg"/>
+  </units>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_cj-d8GJqEeyfft7XdzjWpg" name="RelocateLastOnStack" if="_sq3B8GJqEeyfft7XdzjWpg" then="_kvQ8pmH-Eey-Cc2NmPC8Rw">
+    <parameters xmi:id="_jEI_UGJqEeyfft7XdzjWpg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_jEKNcGJqEeyfft7XdzjWpg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_jEKNcWJqEeyfft7XdzjWpg" name="to">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_tGLPgGJrEeyfft7XdzjWpg" source="_jEKNcWJqEeyfft7XdzjWpg" target="_sq3B8WJqEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_tGLPgWJrEeyfft7XdzjWpg" source="_sq3B8WJqEeyfft7XdzjWpg" target="_jEKNcWJqEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_ukQ-IGJrEeyfft7XdzjWpg" source="_jEI_UGJqEeyfft7XdzjWpg" target="_kvQ8p2H-Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_ukQ-IWJrEeyfft7XdzjWpg" source="_kvQ8p2H-Eey-Cc2NmPC8Rw" target="_jEI_UGJqEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_ukQ-ImJrEeyfft7XdzjWpg" source="_jEKNcGJqEeyfft7XdzjWpg" target="_kvQ8qGH-Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_ukQ-I2JrEeyfft7XdzjWpg" source="_kvQ8qGH-Eey-Cc2NmPC8Rw" target="_jEKNcGJqEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_ukQ-JGJrEeyfft7XdzjWpg" source="_jEKNcWJqEeyfft7XdzjWpg" target="_kvQ8qWH-Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_ukQ-JWJrEeyfft7XdzjWpg" source="_kvQ8qWH-Eey-Cc2NmPC8Rw" target="_jEKNcWJqEeyfft7XdzjWpg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_sq3B8GJqEeyfft7XdzjWpg" name="checkTargetStackNotEmpty">
+    <parameters xmi:id="_sq3B8WJqEeyfft7XdzjWpg" name="stack">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_sq3B8mJqEeyfft7XdzjWpg" name="Lhs">
+      <nodes xmi:id="_sq3B82JqEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_sq3B9GJqEeyfft7XdzjWpg" value="stack">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <formula xsi:type="henshin:NestedCondition" xmi:id="_vE1KAWJqEeyfft7XdzjWpg">
+        <conclusion xmi:id="_vE1KAmJqEeyfft7XdzjWpg">
+          <nodes xmi:id="_vE1KA2JqEeyfft7XdzjWpg" outgoing="_sq3B-2JqEeyfft7XdzjWpg">
+            <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+            <attributes xmi:id="_vE1KBGJqEeyfft7XdzjWpg" value="stack">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+            </attributes>
+          </nodes>
+          <nodes xmi:id="_sq3B-mJqEeyfft7XdzjWpg" incoming="_sq3B-2JqEeyfft7XdzjWpg">
+            <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+          </nodes>
+          <edges xmi:id="_sq3B-2JqEeyfft7XdzjWpg" source="_vE1KA2JqEeyfft7XdzjWpg" target="_sq3B-mJqEeyfft7XdzjWpg">
+            <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+          </edges>
+        </conclusion>
+        <mappings xmi:id="_vE1KBWJqEeyfft7XdzjWpg" origin="_sq3B82JqEeyfft7XdzjWpg" image="_vE1KA2JqEeyfft7XdzjWpg"/>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_sq3B_WJqEeyfft7XdzjWpg" name="Rhs">
+      <nodes xmi:id="_sq3B_mJqEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_sq3B_2JqEeyfft7XdzjWpg" value="stack">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_sq3CAGJqEeyfft7XdzjWpg" origin="_sq3B82JqEeyfft7XdzjWpg" image="_sq3B_mJqEeyfft7XdzjWpg"/>
+  </units>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_ziUpAGJqEeyfft7XdzjWpg" name="Relocate" if="_gj9ToGJAEeyfft7XdzjWpg" then="_cj-d8GJqEeyfft7XdzjWpg" else="_-l1ZwGJqEeyfft7XdzjWpg">
+    <parameters xmi:id="_VbbRcGJrEeyfft7XdzjWpg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_Vbb4gGJrEeyfft7XdzjWpg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_Vbb4gWJrEeyfft7XdzjWpg" name="to">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_xmn74GJrEeyfft7XdzjWpg" source="_VbbRcGJrEeyfft7XdzjWpg" target="_gj9ToWJAEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_xmn74WJrEeyfft7XdzjWpg" source="_gj9ToWJAEeyfft7XdzjWpg" target="_VbbRcGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_xmn74mJrEeyfft7XdzjWpg" source="_Vbb4gGJrEeyfft7XdzjWpg" target="_h2Y_UGJVEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_xmn742JrEeyfft7XdzjWpg" source="_h2Y_UGJVEeyfft7XdzjWpg" target="_Vbb4gGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_0-WFoGJrEeyfft7XdzjWpg" source="_VbbRcGJrEeyfft7XdzjWpg" target="_jEI_UGJqEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_0-WFoWJrEeyfft7XdzjWpg" source="_jEI_UGJqEeyfft7XdzjWpg" target="_VbbRcGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_0-WFomJrEeyfft7XdzjWpg" source="_Vbb4gGJrEeyfft7XdzjWpg" target="_jEKNcGJqEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_0-WFo2JrEeyfft7XdzjWpg" source="_jEKNcGJqEeyfft7XdzjWpg" target="_Vbb4gGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_0-WFpGJrEeyfft7XdzjWpg" source="_Vbb4gWJrEeyfft7XdzjWpg" target="_jEKNcWJqEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_0-WFpWJrEeyfft7XdzjWpg" source="_jEKNcWJqEeyfft7XdzjWpg" target="_Vbb4gWJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_2sd0UGJrEeyfft7XdzjWpg" source="_VbbRcGJrEeyfft7XdzjWpg" target="_CzzPAGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_2sd0UWJrEeyfft7XdzjWpg" source="_CzzPAGJrEeyfft7XdzjWpg" target="_VbbRcGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_2sd0UmJrEeyfft7XdzjWpg" source="_Vbb4gGJrEeyfft7XdzjWpg" target="_CzzPAWJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_2sd0U2JrEeyfft7XdzjWpg" source="_CzzPAWJrEeyfft7XdzjWpg" target="_Vbb4gGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_2sd0VGJrEeyfft7XdzjWpg" source="_Vbb4gWJrEeyfft7XdzjWpg" target="_CzzPAmJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_2sd0VWJrEeyfft7XdzjWpg" source="_CzzPAmJrEeyfft7XdzjWpg" target="_Vbb4gWJrEeyfft7XdzjWpg"/>
+  </units>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_-l1ZwGJqEeyfft7XdzjWpg" name="RelocateNonLastOnStack" if="_D_WOMGJBEeyfft7XdzjWpg" then="_PrPa8GH8Eey-Cc2NmPC8Rw" else="_u1bmMGH8Eey-Cc2NmPC8Rw">
+    <parameters xmi:id="_CzzPAGJrEeyfft7XdzjWpg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_CzzPAWJrEeyfft7XdzjWpg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_CzzPAmJrEeyfft7XdzjWpg" name="to">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_GbbAgGJsEeyfft7XdzjWpg" source="_CzzPAGJrEeyfft7XdzjWpg" target="_PrPa8WH8Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_GbbAgWJsEeyfft7XdzjWpg" source="_PrPa8WH8Eey-Cc2NmPC8Rw" target="_CzzPAGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_GbbAgmJsEeyfft7XdzjWpg" source="_CzzPAWJrEeyfft7XdzjWpg" target="_PrPa8mH8Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_GbbAg2JsEeyfft7XdzjWpg" source="_PrPa8mH8Eey-Cc2NmPC8Rw" target="_CzzPAWJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_GbbAhGJsEeyfft7XdzjWpg" source="_CzzPAmJrEeyfft7XdzjWpg" target="_PrPa82H8Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_GbbAhWJsEeyfft7XdzjWpg" source="_PrPa82H8Eey-Cc2NmPC8Rw" target="_CzzPAmJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_HiNpcGJsEeyfft7XdzjWpg" source="_CzzPAGJrEeyfft7XdzjWpg" target="_u1bmMWH8Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_HiOQgGJsEeyfft7XdzjWpg" source="_u1bmMWH8Eey-Cc2NmPC8Rw" target="_CzzPAGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_HiOQgWJsEeyfft7XdzjWpg" source="_CzzPAWJrEeyfft7XdzjWpg" target="_u1bmMmH8Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_HiOQgmJsEeyfft7XdzjWpg" source="_u1bmMmH8Eey-Cc2NmPC8Rw" target="_CzzPAWJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_HiOQg2JsEeyfft7XdzjWpg" source="_CzzPAmJrEeyfft7XdzjWpg" target="_u1bmM2H8Eey-Cc2NmPC8Rw"/>
+    <parameterMappings xmi:id="_HiOQhGJsEeyfft7XdzjWpg" source="_u1bmM2H8Eey-Cc2NmPC8Rw" target="_CzzPAmJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_I79DkGJsEeyfft7XdzjWpg" source="_CzzPAmJrEeyfft7XdzjWpg" target="_Q5IkEGJBEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_I79DkWJsEeyfft7XdzjWpg" source="_Q5IkEGJBEeyfft7XdzjWpg" target="_CzzPAmJrEeyfft7XdzjWpg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_JVXP0GJxEeyfft7XdzjWpg" name="retrieveLastFromStack">
+    <parameters xmi:id="_Nt_c8GJxEeyfft7XdzjWpg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_Nt_c8WJxEeyfft7XdzjWpg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_JVdWcGJxEeyfft7XdzjWpg" name="Lhs">
+      <nodes xmi:id="_RCabEGJxEeyfft7XdzjWpg" outgoing="_oF3IkGJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_RZ4f4GJxEeyfft7XdzjWpg" incoming="_oF3IkGJxEeyfft7XdzjWpg _ur954GJxEeyfft7XdzjWpg" outgoing="_yXESoGJxEeyfft7XdzjWpg _sykA4GJ0Eeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_Us9aMGJxEeyfft7XdzjWpg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_Rr3nwGJxEeyfft7XdzjWpg" incoming="_yXESoGJxEeyfft7XdzjWpg" outgoing="_ur954GJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_TdZ20GJxEeyfft7XdzjWpg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_jMbUcGJxEeyfft7XdzjWpg" incoming="_sykA4GJ0Eeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_oF3IkGJxEeyfft7XdzjWpg" source="_RCabEGJxEeyfft7XdzjWpg" target="_RZ4f4GJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <edges xmi:id="_ur954GJxEeyfft7XdzjWpg" source="_Rr3nwGJxEeyfft7XdzjWpg" target="_RZ4f4GJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_yXESoGJxEeyfft7XdzjWpg" source="_RZ4f4GJxEeyfft7XdzjWpg" target="_Rr3nwGJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_sykA4GJ0Eeyfft7XdzjWpg" source="_RZ4f4GJxEeyfft7XdzjWpg" target="_jMbUcGJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/successor"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_JVdWcWJxEeyfft7XdzjWpg" name="Rhs">
+      <nodes xmi:id="_RCabEWJxEeyfft7XdzjWpg" outgoing="_sIvIIGJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_RZ5G8GJxEeyfft7XdzjWpg" outgoing="_sykA4WJ0Eeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_Us9aMWJxEeyfft7XdzjWpg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_Rr4O0GJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_TdZ20WJxEeyfft7XdzjWpg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_jMbUcWJxEeyfft7XdzjWpg" incoming="_sIvIIGJxEeyfft7XdzjWpg _sykA4WJ0Eeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_sIvIIGJxEeyfft7XdzjWpg" source="_RCabEWJxEeyfft7XdzjWpg" target="_jMbUcWJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <edges xmi:id="_sykA4WJ0Eeyfft7XdzjWpg" source="_RZ5G8GJxEeyfft7XdzjWpg" target="_jMbUcWJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/successor"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_RCabEmJxEeyfft7XdzjWpg" origin="_RCabEGJxEeyfft7XdzjWpg" image="_RCabEWJxEeyfft7XdzjWpg"/>
+    <mappings xmi:id="_RZ5G8WJxEeyfft7XdzjWpg" origin="_RZ4f4GJxEeyfft7XdzjWpg" image="_RZ5G8GJxEeyfft7XdzjWpg"/>
+    <mappings xmi:id="_Rr4O0WJxEeyfft7XdzjWpg" origin="_Rr3nwGJxEeyfft7XdzjWpg" image="_Rr4O0GJxEeyfft7XdzjWpg"/>
+    <mappings xmi:id="_jMbUcmJxEeyfft7XdzjWpg" origin="_jMbUcGJxEeyfft7XdzjWpg" image="_jMbUcWJxEeyfft7XdzjWpg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_-VWCp2JxEeyfft7XdzjWpg" name="retrieveNonLastFromStack">
+    <parameters xmi:id="_-VWCqGJxEeyfft7XdzjWpg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_-VWCqWJxEeyfft7XdzjWpg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_-VWCqmJxEeyfft7XdzjWpg" name="Lhs">
+      <nodes xmi:id="_-VWCq2JxEeyfft7XdzjWpg" outgoing="_-VWCsWJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_-VWCrGJxEeyfft7XdzjWpg" incoming="_-VWCsWJxEeyfft7XdzjWpg _-VWCsmJxEeyfft7XdzjWpg" outgoing="_-VWCs2JxEeyfft7XdzjWpg _Lmg9oGJyEeyfft7XdzjWpg _up1EgGJ0Eeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_-VWCrWJxEeyfft7XdzjWpg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_-VWCrmJxEeyfft7XdzjWpg" incoming="_-VWCs2JxEeyfft7XdzjWpg" outgoing="_-VWCsmJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_-VWCr2JxEeyfft7XdzjWpg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_-VWCsGJxEeyfft7XdzjWpg" incoming="_up1EgGJ0Eeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <nodes xmi:id="_KxL4IGJyEeyfft7XdzjWpg" incoming="_Lmg9oGJyEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_-VWCsWJxEeyfft7XdzjWpg" source="_-VWCq2JxEeyfft7XdzjWpg" target="_-VWCrGJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <edges xmi:id="_-VWCsmJxEeyfft7XdzjWpg" source="_-VWCrmJxEeyfft7XdzjWpg" target="_-VWCrGJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_-VWCs2JxEeyfft7XdzjWpg" source="_-VWCrGJxEeyfft7XdzjWpg" target="_-VWCrmJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_Lmg9oGJyEeyfft7XdzjWpg" source="_-VWCrGJxEeyfft7XdzjWpg" target="_KxL4IGJyEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+      </edges>
+      <edges xmi:id="_up1EgGJ0Eeyfft7XdzjWpg" source="_-VWCrGJxEeyfft7XdzjWpg" target="_-VWCsGJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/successor"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_-VWCtGJxEeyfft7XdzjWpg" name="Rhs">
+      <nodes xmi:id="_-VWCtWJxEeyfft7XdzjWpg" outgoing="_-VWCu2JxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_-VWCtmJxEeyfft7XdzjWpg" outgoing="_up1EgWJ0Eeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_-VWCt2JxEeyfft7XdzjWpg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_-VWCuGJxEeyfft7XdzjWpg" outgoing="_PAWnQGJyEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_-VWCuWJxEeyfft7XdzjWpg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_-VWCumJxEeyfft7XdzjWpg" incoming="_-VWCu2JxEeyfft7XdzjWpg _up1EgWJ0Eeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <nodes xmi:id="_KxL4IWJyEeyfft7XdzjWpg" incoming="_PAWnQGJyEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_-VWCu2JxEeyfft7XdzjWpg" source="_-VWCtWJxEeyfft7XdzjWpg" target="_-VWCumJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <edges xmi:id="_PAWnQGJyEeyfft7XdzjWpg" source="_-VWCuGJxEeyfft7XdzjWpg" target="_KxL4IWJyEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_up1EgWJ0Eeyfft7XdzjWpg" source="_-VWCtmJxEeyfft7XdzjWpg" target="_-VWCumJxEeyfft7XdzjWpg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/successor"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_-VWCvGJxEeyfft7XdzjWpg" origin="_-VWCq2JxEeyfft7XdzjWpg" image="_-VWCtWJxEeyfft7XdzjWpg"/>
+    <mappings xmi:id="_-VWCvWJxEeyfft7XdzjWpg" origin="_-VWCrGJxEeyfft7XdzjWpg" image="_-VWCtmJxEeyfft7XdzjWpg"/>
+    <mappings xmi:id="_-VWCvmJxEeyfft7XdzjWpg" origin="_-VWCrmJxEeyfft7XdzjWpg" image="_-VWCuGJxEeyfft7XdzjWpg"/>
+    <mappings xmi:id="_-VWCv2JxEeyfft7XdzjWpg" origin="_-VWCsGJxEeyfft7XdzjWpg" image="_-VWCumJxEeyfft7XdzjWpg"/>
+    <mappings xmi:id="_KxL4ImJyEeyfft7XdzjWpg" origin="_KxL4IGJyEeyfft7XdzjWpg" image="_KxL4IWJyEeyfft7XdzjWpg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Fvpa0GLIEeyj1OL1IPYRzg" name="checkContainerToRetrieveOnTopOfSuccessor">
+    <parameters xmi:id="_XEr0AGLIEeyj1OL1IPYRzg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_FvwIgGLIEeyj1OL1IPYRzg" name="Lhs">
+      <nodes xmi:id="_X9pcUGLIEeyj1OL1IPYRzg" incoming="_Z4yd4GLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_agE80GLIEeyj1OL1IPYRzg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_dya3UGLIEeyj1OL1IPYRzg" outgoing="_Z4yd4GLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <edges xmi:id="_Z4yd4GLJEeyj1OL1IPYRzg" source="_dya3UGLIEeyj1OL1IPYRzg" target="_X9pcUGLIEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <formula xsi:type="henshin:NestedCondition" xmi:id="_3tWvUGLIEeyj1OL1IPYRzg">
+        <conclusion xmi:id="_3tWvUWLIEeyj1OL1IPYRzg">
+          <nodes xmi:id="_3tWvUmLIEeyj1OL1IPYRzg" outgoing="_WaHXkGLJEeyj1OL1IPYRzg _W4mqYGLJEeyj1OL1IPYRzg">
+            <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+            <attributes xmi:id="_3tWvU2LIEeyj1OL1IPYRzg" value="container">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+            </attributes>
+          </nodes>
+          <nodes xmi:id="_3tXWYWLIEeyj1OL1IPYRzg">
+            <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+          </nodes>
+          <nodes xmi:id="_ZqkRIGLIEeyj1OL1IPYRzg" incoming="_WaHXkGLJEeyj1OL1IPYRzg _W4mqYGLJEeyj1OL1IPYRzg">
+            <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+          </nodes>
+          <edges xmi:id="_WaHXkGLJEeyj1OL1IPYRzg" source="_3tWvUmLIEeyj1OL1IPYRzg" target="_ZqkRIGLIEeyj1OL1IPYRzg">
+            <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+          </edges>
+          <edges xmi:id="_W4mqYGLJEeyj1OL1IPYRzg" source="_3tWvUmLIEeyj1OL1IPYRzg" target="_ZqkRIGLIEeyj1OL1IPYRzg">
+            <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/successor"/>
+          </edges>
+        </conclusion>
+        <mappings xmi:id="_3tXWYGLIEeyj1OL1IPYRzg" origin="_X9pcUGLIEeyj1OL1IPYRzg" image="_3tWvUmLIEeyj1OL1IPYRzg"/>
+        <mappings xmi:id="_3tXWYmLIEeyj1OL1IPYRzg" origin="_dya3UGLIEeyj1OL1IPYRzg" image="_3tXWYWLIEeyj1OL1IPYRzg"/>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_FvwvkGLIEeyj1OL1IPYRzg" name="Rhs">
+      <nodes xmi:id="_X9pcUWLIEeyj1OL1IPYRzg" incoming="_Z4yd4WLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_agE80WLIEeyj1OL1IPYRzg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_dya3UWLIEeyj1OL1IPYRzg" outgoing="_Z4yd4WLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <edges xmi:id="_Z4yd4WLJEeyj1OL1IPYRzg" source="_dya3UWLIEeyj1OL1IPYRzg" target="_X9pcUWLIEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_X9pcUmLIEeyj1OL1IPYRzg" origin="_X9pcUGLIEeyj1OL1IPYRzg" image="_X9pcUWLIEeyj1OL1IPYRzg"/>
+    <mappings xmi:id="_dya3UmLIEeyj1OL1IPYRzg" origin="_dya3UGLIEeyj1OL1IPYRzg" image="_dya3UWLIEeyj1OL1IPYRzg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_A-XnsGLJEeyj1OL1IPYRzg" name="checkContainerToRetrieveLastOverall">
+    <parameters xmi:id="_A-XnsWLJEeyj1OL1IPYRzg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_A-XnsmLJEeyj1OL1IPYRzg" name="Lhs">
+      <nodes xmi:id="_A-XntWLJEeyj1OL1IPYRzg" outgoing="_OKGCIGLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_KG3dQGLJEeyj1OL1IPYRzg" incoming="_OKGCIGLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_OKGCIGLJEeyj1OL1IPYRzg" source="_A-XntWLJEeyj1OL1IPYRzg" target="_KG3dQGLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_M4hFgGLJEeyj1OL1IPYRzg">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_M4hFgWLJEeyj1OL1IPYRzg">
+          <conclusion xmi:id="_M4hFgmLJEeyj1OL1IPYRzg">
+            <nodes xmi:id="_M4hskGLJEeyj1OL1IPYRzg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+            </nodes>
+            <nodes xmi:id="_M4hskmLJEeyj1OL1IPYRzg" outgoing="_LnuMAGLJEeyj1OL1IPYRzg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+            </nodes>
+            <nodes xmi:id="_KmmGMGLJEeyj1OL1IPYRzg" incoming="_LnuMAGLJEeyj1OL1IPYRzg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+            </nodes>
+            <edges xmi:id="_LnuMAGLJEeyj1OL1IPYRzg" source="_M4hskmLJEeyj1OL1IPYRzg" target="_KmmGMGLJEeyj1OL1IPYRzg">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/successor"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_M4hskWLJEeyj1OL1IPYRzg" origin="_A-XntWLJEeyj1OL1IPYRzg" image="_M4hskGLJEeyj1OL1IPYRzg"/>
+          <mappings xmi:id="_M4hsk2LJEeyj1OL1IPYRzg" origin="_KG3dQGLJEeyj1OL1IPYRzg" image="_M4hskmLJEeyj1OL1IPYRzg"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_A-XnwmLJEeyj1OL1IPYRzg" name="Rhs">
+      <nodes xmi:id="_A-XnxWLJEeyj1OL1IPYRzg" outgoing="_OKGCIWLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_KG4EUGLJEeyj1OL1IPYRzg" incoming="_OKGCIWLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_OKGCIWLJEeyj1OL1IPYRzg" source="_A-XnxWLJEeyj1OL1IPYRzg" target="_KG4EUGLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_A-XnyGLJEeyj1OL1IPYRzg" origin="_A-XntWLJEeyj1OL1IPYRzg" image="_A-XnxWLJEeyj1OL1IPYRzg"/>
+    <mappings xmi:id="_KG4EUWLJEeyj1OL1IPYRzg" origin="_KG3dQGLJEeyj1OL1IPYRzg" image="_KG4EUGLJEeyj1OL1IPYRzg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_fJF54GLJEeyj1OL1IPYRzg" name="retrieveLastOverallFromStack">
+    <parameters xmi:id="_fJF54WLJEeyj1OL1IPYRzg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_fJF54mLJEeyj1OL1IPYRzg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_fJF542LJEeyj1OL1IPYRzg" name="Lhs">
+      <nodes xmi:id="_fJF55GLJEeyj1OL1IPYRzg" outgoing="_fJF562LJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_fJF55WLJEeyj1OL1IPYRzg" incoming="_fJF562LJEeyj1OL1IPYRzg _fJF57GLJEeyj1OL1IPYRzg" outgoing="_fJF57WLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_fJF55mLJEeyj1OL1IPYRzg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_fJF552LJEeyj1OL1IPYRzg" incoming="_fJF57WLJEeyj1OL1IPYRzg" outgoing="_fJF57GLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_fJF56GLJEeyj1OL1IPYRzg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_fJF562LJEeyj1OL1IPYRzg" source="_fJF55GLJEeyj1OL1IPYRzg" target="_fJF55WLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <edges xmi:id="_fJF57GLJEeyj1OL1IPYRzg" source="_fJF552LJEeyj1OL1IPYRzg" target="_fJF55WLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_fJF57WLJEeyj1OL1IPYRzg" source="_fJF55WLJEeyj1OL1IPYRzg" target="_fJF552LJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_fJF58GLJEeyj1OL1IPYRzg" name="Rhs">
+      <nodes xmi:id="_fJF58WLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_fJF58mLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_fJF582LJEeyj1OL1IPYRzg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_fJF59GLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_fJF59WLJEeyj1OL1IPYRzg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_fJF5-2LJEeyj1OL1IPYRzg" origin="_fJF55GLJEeyj1OL1IPYRzg" image="_fJF58WLJEeyj1OL1IPYRzg"/>
+    <mappings xmi:id="_fJF5_GLJEeyj1OL1IPYRzg" origin="_fJF55WLJEeyj1OL1IPYRzg" image="_fJF58mLJEeyj1OL1IPYRzg"/>
+    <mappings xmi:id="_fJF5_WLJEeyj1OL1IPYRzg" origin="_fJF552LJEeyj1OL1IPYRzg" image="_fJF59GLJEeyj1OL1IPYRzg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_1XTBcGLJEeyj1OL1IPYRzg" name="retrieveOnTopOfSuccessorFromStack">
+    <parameters xmi:id="_1XTBcWLJEeyj1OL1IPYRzg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_1XTBcmLJEeyj1OL1IPYRzg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_1XTBc2LJEeyj1OL1IPYRzg" name="Lhs">
+      <nodes xmi:id="_1XTBdGLJEeyj1OL1IPYRzg" outgoing="_1XTBe2LJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_1XTBdWLJEeyj1OL1IPYRzg" incoming="_1XTBe2LJEeyj1OL1IPYRzg _1XTBfGLJEeyj1OL1IPYRzg" outgoing="_1XTBfWLJEeyj1OL1IPYRzg _1XTBfmLJEeyj1OL1IPYRzg _nrKzMGLKEeysP4loViO1cg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_1XTBdmLJEeyj1OL1IPYRzg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_1XTBd2LJEeyj1OL1IPYRzg" incoming="_1XTBfWLJEeyj1OL1IPYRzg" outgoing="_1XTBfGLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_1XTBeGLJEeyj1OL1IPYRzg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_1XTBemLJEeyj1OL1IPYRzg" incoming="_1XTBfmLJEeyj1OL1IPYRzg _nrKzMGLKEeysP4loViO1cg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_1XTBe2LJEeyj1OL1IPYRzg" source="_1XTBdGLJEeyj1OL1IPYRzg" target="_1XTBdWLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <edges xmi:id="_1XTBfGLJEeyj1OL1IPYRzg" source="_1XTBd2LJEeyj1OL1IPYRzg" target="_1XTBdWLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_1XTBfWLJEeyj1OL1IPYRzg" source="_1XTBdWLJEeyj1OL1IPYRzg" target="_1XTBd2LJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <edges xmi:id="_1XTBfmLJEeyj1OL1IPYRzg" source="_1XTBdWLJEeyj1OL1IPYRzg" target="_1XTBemLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+      </edges>
+      <edges xmi:id="_nrKzMGLKEeysP4loViO1cg" source="_1XTBdWLJEeyj1OL1IPYRzg" target="_1XTBemLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/successor"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_1XTBgGLJEeyj1OL1IPYRzg" name="Rhs">
+      <nodes xmi:id="_1XTBgWLJEeyj1OL1IPYRzg" outgoing="_rnoBsGLKEeysP4loViO1cg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_1XTBgmLJEeyj1OL1IPYRzg" outgoing="_nrKzMWLKEeysP4loViO1cg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_1XTBg2LJEeyj1OL1IPYRzg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_1XTBhGLJEeyj1OL1IPYRzg" outgoing="_1XTBiWLJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+        <attributes xmi:id="_1XTBhWLJEeyj1OL1IPYRzg" value="from">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_1XTBh2LJEeyj1OL1IPYRzg" incoming="_1XTBiWLJEeyj1OL1IPYRzg _nrKzMWLKEeysP4loViO1cg _rnoBsGLKEeysP4loViO1cg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+      </nodes>
+      <edges xmi:id="_1XTBiWLJEeyj1OL1IPYRzg" source="_1XTBhGLJEeyj1OL1IPYRzg" target="_1XTBh2LJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack/topContainer"/>
+      </edges>
+      <edges xmi:id="_nrKzMWLKEeysP4loViO1cg" source="_1XTBgmLJEeyj1OL1IPYRzg" target="_1XTBh2LJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/successor"/>
+      </edges>
+      <edges xmi:id="_rnoBsGLKEeysP4loViO1cg" source="_1XTBgWLJEeyj1OL1IPYRzg" target="_1XTBh2LJEeyj1OL1IPYRzg">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_1XTBi2LJEeyj1OL1IPYRzg" origin="_1XTBdGLJEeyj1OL1IPYRzg" image="_1XTBgWLJEeyj1OL1IPYRzg"/>
+    <mappings xmi:id="_1XTBjGLJEeyj1OL1IPYRzg" origin="_1XTBdWLJEeyj1OL1IPYRzg" image="_1XTBgmLJEeyj1OL1IPYRzg"/>
+    <mappings xmi:id="_1XTBjWLJEeyj1OL1IPYRzg" origin="_1XTBd2LJEeyj1OL1IPYRzg" image="_1XTBhGLJEeyj1OL1IPYRzg"/>
+    <mappings xmi:id="_1XTBj2LJEeyj1OL1IPYRzg" origin="_1XTBemLJEeyj1OL1IPYRzg" image="_1XTBh2LJEeyj1OL1IPYRzg"/>
+  </units>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_g1BlUGLLEeysP4loViO1cg" name="RetrieveNonLastOverall" if="_Fvpa0GLIEeyj1OL1IPYRzg" then="_1XTBcGLJEeyj1OL1IPYRzg" else="_sVbGYGLLEeysP4loViO1cg">
+    <parameters xmi:id="_mcK0AGLLEeysP4loViO1cg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_mcK0AWLLEeysP4loViO1cg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_Hch2kGLMEeysP4loViO1cg" source="_mcK0AGLLEeysP4loViO1cg" target="_XEr0AGLIEeyj1OL1IPYRzg"/>
+    <parameterMappings xmi:id="_Hch2kWLMEeysP4loViO1cg" source="_XEr0AGLIEeyj1OL1IPYRzg" target="_mcK0AGLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_NOwT4GLMEeysP4loViO1cg" source="_mcK0AGLLEeysP4loViO1cg" target="_1XTBcWLJEeyj1OL1IPYRzg"/>
+    <parameterMappings xmi:id="_NOwT4WLMEeysP4loViO1cg" source="_1XTBcWLJEeyj1OL1IPYRzg" target="_mcK0AGLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_NOwT4mLMEeysP4loViO1cg" source="_mcK0AWLLEeysP4loViO1cg" target="_1XTBcmLJEeyj1OL1IPYRzg"/>
+    <parameterMappings xmi:id="_NOwT42LMEeysP4loViO1cg" source="_1XTBcmLJEeyj1OL1IPYRzg" target="_mcK0AWLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_Ojmm8GLMEeysP4loViO1cg" source="_mcK0AGLLEeysP4loViO1cg" target="_0TCdMGLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_Ojmm8WLMEeysP4loViO1cg" source="_0TCdMGLLEeysP4loViO1cg" target="_mcK0AGLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_Ojmm8mLMEeysP4loViO1cg" source="_mcK0AWLLEeysP4loViO1cg" target="_0TCdMWLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_Ojmm82LMEeysP4loViO1cg" source="_0TCdMWLLEeysP4loViO1cg" target="_mcK0AWLLEeysP4loViO1cg"/>
+  </units>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_sVbGYGLLEeysP4loViO1cg" name="RetrieveNormalLastOrNonLastOnStack" if="_gj9ToGJAEeyfft7XdzjWpg" then="_JVXP0GJxEeyfft7XdzjWpg" else="_-VWCp2JxEeyfft7XdzjWpg">
+    <parameters xmi:id="_0TCdMGLLEeysP4loViO1cg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_0TCdMWLLEeysP4loViO1cg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_CKWyUGLMEeysP4loViO1cg" source="_0TCdMGLLEeysP4loViO1cg" target="_gj9ToWJAEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_CKWyUWLMEeysP4loViO1cg" source="_gj9ToWJAEeyfft7XdzjWpg" target="_0TCdMGLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_CKWyUmLMEeysP4loViO1cg" source="_0TCdMWLLEeysP4loViO1cg" target="_h2Y_UGJVEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_CKWyU2LMEeysP4loViO1cg" source="_h2Y_UGJVEeyfft7XdzjWpg" target="_0TCdMWLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_DbVSAGLMEeysP4loViO1cg" source="_0TCdMGLLEeysP4loViO1cg" target="_Nt_c8GJxEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_DbVSAWLMEeysP4loViO1cg" source="_Nt_c8GJxEeyfft7XdzjWpg" target="_0TCdMGLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_DbVSAmLMEeysP4loViO1cg" source="_0TCdMWLLEeysP4loViO1cg" target="_Nt_c8WJxEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_DbVSA2LMEeysP4loViO1cg" source="_Nt_c8WJxEeyfft7XdzjWpg" target="_0TCdMWLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_E-2TMGLMEeysP4loViO1cg" source="_0TCdMGLLEeysP4loViO1cg" target="_-VWCqGJxEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_E-2TMWLMEeysP4loViO1cg" source="_-VWCqGJxEeyfft7XdzjWpg" target="_0TCdMGLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_E-2TMmLMEeysP4loViO1cg" source="_0TCdMWLLEeysP4loViO1cg" target="_-VWCqWJxEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_E-2TM2LMEeysP4loViO1cg" source="_-VWCqWJxEeyfft7XdzjWpg" target="_0TCdMWLLEeysP4loViO1cg"/>
+  </units>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_zqEb4GLPEeyAP7oKFG3xGA" name="Retrieve" if="_A-XnsGLJEeyj1OL1IPYRzg" then="_fJF54GLJEeyj1OL1IPYRzg" else="_g1BlUGLLEeysP4loViO1cg">
+    <parameters xmi:id="_2GUb4GLPEeyAP7oKFG3xGA" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_2GUb4WLPEeyAP7oKFG3xGA" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_DL_4sGLQEeyAP7oKFG3xGA" source="_2GUb4GLPEeyAP7oKFG3xGA" target="_A-XnsWLJEeyj1OL1IPYRzg"/>
+    <parameterMappings xmi:id="_DL_4sWLQEeyAP7oKFG3xGA" source="_A-XnsWLJEeyj1OL1IPYRzg" target="_2GUb4GLPEeyAP7oKFG3xGA"/>
+    <parameterMappings xmi:id="_EqfP8GLQEeyAP7oKFG3xGA" source="_2GUb4GLPEeyAP7oKFG3xGA" target="_fJF54WLJEeyj1OL1IPYRzg"/>
+    <parameterMappings xmi:id="_EqfP8WLQEeyAP7oKFG3xGA" source="_fJF54WLJEeyj1OL1IPYRzg" target="_2GUb4GLPEeyAP7oKFG3xGA"/>
+    <parameterMappings xmi:id="_EqfP8mLQEeyAP7oKFG3xGA" source="_2GUb4WLPEeyAP7oKFG3xGA" target="_fJF54mLJEeyj1OL1IPYRzg"/>
+    <parameterMappings xmi:id="_Eqf3AGLQEeyAP7oKFG3xGA" source="_fJF54mLJEeyj1OL1IPYRzg" target="_2GUb4WLPEeyAP7oKFG3xGA"/>
+    <parameterMappings xmi:id="_F7HKUGLQEeyAP7oKFG3xGA" source="_2GUb4GLPEeyAP7oKFG3xGA" target="_mcK0AGLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_F7HKUWLQEeyAP7oKFG3xGA" source="_mcK0AGLLEeysP4loViO1cg" target="_2GUb4GLPEeyAP7oKFG3xGA"/>
+    <parameterMappings xmi:id="_F7HKUmLQEeyAP7oKFG3xGA" source="_2GUb4WLPEeyAP7oKFG3xGA" target="_mcK0AWLLEeysP4loViO1cg"/>
+    <parameterMappings xmi:id="_F7HKU2LQEeyAP7oKFG3xGA" source="_mcK0AWLLEeysP4loViO1cg" target="_2GUb4WLPEeyAP7oKFG3xGA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_P1nDoGvbEeyyxNPzYDvNTA" name="canRetrieveContainer">
+    <parameters xmi:id="_iEdUgGvtEeyfRtX3iQ1gmg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_P1u_cGvbEeyyxNPzYDvNTA" name="Lhs">
+      <nodes xmi:id="_T7fT4GvbEeyyxNPzYDvNTA" outgoing="_WtycYGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_VBB_oGvbEeyyxNPzYDvNTA" incoming="_WtycYGvbEeyyxNPzYDvNTA" outgoing="_mmezYGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_itfDYGvtEeyfRtX3iQ1gmg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_lxCZIGvbEeyyxNPzYDvNTA" incoming="_mmezYGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+      </nodes>
+      <edges xmi:id="_WtycYGvbEeyyxNPzYDvNTA" source="_T7fT4GvbEeyyxNPzYDvNTA" target="_VBB_oGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <edges xmi:id="_mmezYGvbEeyyxNPzYDvNTA" source="_VBB_oGvbEeyyxNPzYDvNTA" target="_lxCZIGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_hiLMAGvbEeyyxNPzYDvNTA">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_hiLMAWvbEeyyxNPzYDvNTA">
+          <conclusion xmi:id="_hiLMAmvbEeyyxNPzYDvNTA">
+            <nodes xmi:id="_a5mVgGvbEeyyxNPzYDvNTA" outgoing="_fCSpMGvbEeyyxNPzYDvNTA">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+            </nodes>
+            <nodes xmi:id="_hiLMBWvbEeyyxNPzYDvNTA" incoming="_fCSpMGvbEeyyxNPzYDvNTA _h-7ZcmvbEeyyxNPzYDvNTA">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+              <attributes xmi:id="_itfDYmvtEeyfRtX3iQ1gmg" value="container">
+                <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_h-7ZcGvbEeyyxNPzYDvNTA" outgoing="_h-7ZcmvbEeyyxNPzYDvNTA">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+            </nodes>
+            <edges xmi:id="_fCSpMGvbEeyyxNPzYDvNTA" source="_a5mVgGvbEeyyxNPzYDvNTA" target="_hiLMBWvbEeyyxNPzYDvNTA">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/onTopOf"/>
+            </edges>
+            <edges xmi:id="_h-7ZcmvbEeyyxNPzYDvNTA" source="_h-7ZcGvbEeyyxNPzYDvNTA" target="_hiLMBWvbEeyyxNPzYDvNTA">
+              <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_hiLMBmvbEeyyxNPzYDvNTA" origin="_VBB_oGvbEeyyxNPzYDvNTA" image="_hiLMBWvbEeyyxNPzYDvNTA"/>
+          <mappings xmi:id="_h-7ZcWvbEeyyxNPzYDvNTA" origin="_T7fT4GvbEeyyxNPzYDvNTA" image="_h-7ZcGvbEeyyxNPzYDvNTA"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_P1u_cWvbEeyyxNPzYDvNTA" name="Rhs">
+      <nodes xmi:id="_T7f68GvbEeyyxNPzYDvNTA" outgoing="_WtycYWvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel"/>
+      </nodes>
+      <nodes xmi:id="_VBCmsGvbEeyyxNPzYDvNTA" incoming="_WtycYWvbEeyyxNPzYDvNTA" outgoing="_mmfacGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container"/>
+        <attributes xmi:id="_itfDYWvtEeyfRtX3iQ1gmg" value="container">
+          <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_lxGDgGvbEeyyxNPzYDvNTA" incoming="_mmfacGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Stack"/>
+      </nodes>
+      <edges xmi:id="_WtycYWvbEeyyxNPzYDvNTA" source="_T7f68GvbEeyyxNPzYDvNTA" target="_VBCmsGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//ContainerModel/nextContainer"/>
+      </edges>
+      <edges xmi:id="_mmfacGvbEeyyxNPzYDvNTA" source="_VBCmsGvbEeyyxNPzYDvNTA" target="_lxGDgGvbEeyyxNPzYDvNTA">
+        <type href="http://momot.big.tuwien.ac.at/examples/icmt/container/1.0#//Container/on"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_T7f68WvbEeyyxNPzYDvNTA" origin="_T7fT4GvbEeyyxNPzYDvNTA" image="_T7f68GvbEeyyxNPzYDvNTA"/>
+    <mappings xmi:id="_VBCmsWvbEeyyxNPzYDvNTA" origin="_VBB_oGvbEeyyxNPzYDvNTA" image="_VBCmsGvbEeyyxNPzYDvNTA"/>
+    <mappings xmi:id="_lxGDgWvbEeyyxNPzYDvNTA" origin="_lxCZIGvbEeyyxNPzYDvNTA" image="_lxGDgGvbEeyyxNPzYDvNTA"/>
+  </units>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_p9gZkGvbEeyyxNPzYDvNTA" name="RetrieveElseRelocate" if="_P1nDoGvbEeyyxNPzYDvNTA" then="_zqEb4GLPEeyAP7oKFG3xGA" else="_ziUpAGJqEeyfft7XdzjWpg">
+    <parameters xmi:id="_tZPtYGvrEeyfRtX3iQ1gmg" name="container">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_tZUl4GvrEeyfRtX3iQ1gmg" name="from">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_tZVM8GvrEeyfRtX3iQ1gmg" name="to">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameterMappings xmi:id="_yRa9QGvrEeyfRtX3iQ1gmg" source="_tZPtYGvrEeyfRtX3iQ1gmg" target="_2GUb4GLPEeyAP7oKFG3xGA"/>
+    <parameterMappings xmi:id="_yRa9QWvrEeyfRtX3iQ1gmg" source="_2GUb4GLPEeyAP7oKFG3xGA" target="_tZPtYGvrEeyfRtX3iQ1gmg"/>
+    <parameterMappings xmi:id="_yRa9QmvrEeyfRtX3iQ1gmg" source="_tZUl4GvrEeyfRtX3iQ1gmg" target="_2GUb4WLPEeyAP7oKFG3xGA"/>
+    <parameterMappings xmi:id="_yRbkUGvrEeyfRtX3iQ1gmg" source="_2GUb4WLPEeyAP7oKFG3xGA" target="_tZUl4GvrEeyfRtX3iQ1gmg"/>
+    <parameterMappings xmi:id="_1riTsGvrEeyfRtX3iQ1gmg" source="_tZPtYGvrEeyfRtX3iQ1gmg" target="_VbbRcGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_1riTsWvrEeyfRtX3iQ1gmg" source="_VbbRcGJrEeyfft7XdzjWpg" target="_tZPtYGvrEeyfRtX3iQ1gmg"/>
+    <parameterMappings xmi:id="_1riTsmvrEeyfRtX3iQ1gmg" source="_tZUl4GvrEeyfRtX3iQ1gmg" target="_Vbb4gGJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_1riTs2vrEeyfRtX3iQ1gmg" source="_Vbb4gGJrEeyfft7XdzjWpg" target="_tZUl4GvrEeyfRtX3iQ1gmg"/>
+    <parameterMappings xmi:id="_1riTtGvrEeyfRtX3iQ1gmg" source="_tZVM8GvrEeyfRtX3iQ1gmg" target="_Vbb4gWJrEeyfft7XdzjWpg"/>
+    <parameterMappings xmi:id="_1riTtWvrEeyfRtX3iQ1gmg" source="_Vbb4gWJrEeyfft7XdzjWpg" target="_tZVM8GvrEeyfRtX3iQ1gmg"/>
+    <parameterMappings xmi:id="_umFCAGvtEeyfRtX3iQ1gmg" source="_tZPtYGvrEeyfRtX3iQ1gmg" target="_iEdUgGvtEeyfRtX3iQ1gmg"/>
+    <parameterMappings xmi:id="_umIFUGvtEeyfRtX3iQ1gmg" source="_iEdUgGvtEeyfRtX3iQ1gmg" target="_tZPtYGvrEeyfRtX3iQ1gmg"/>
+  </units>
+</henshin:Module>

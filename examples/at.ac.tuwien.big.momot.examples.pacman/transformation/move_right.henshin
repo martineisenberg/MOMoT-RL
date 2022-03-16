@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_2o6F4ITpEeiDsrgzro5g-A">
+  <imports href="http://www.geodes.org/Pacman#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_3A3S4ITpEeiDsrgzro5g-A" name="moveRight">
+    <parameters xmi:id="_3a70YIUYEeiBFberwwvMbw" name="mover">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_3BAc1ITpEeiDsrgzro5g-A" name="Lhs">
+      <nodes xmi:id="_5xfncITpEeiDsrgzro5g-A" incoming="_7zOOoITpEeiDsrgzro5g-A" outgoing="_7aFV4ITpEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_57Av0ITpEeiDsrgzro5g-A" incoming="_7aFV4ITpEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_6VynUITpEeiDsrgzro5g-A" outgoing="_7zOOoITpEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//MoveableEntity"/>
+        <attributes xmi:id="_3u7ucIUYEeiBFberwwvMbw" value="mover">
+          <type href="http://www.geodes.org/Pacman#//PositionableEntity/Id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_7aFV4ITpEeiDsrgzro5g-A" source="_5xfncITpEeiDsrgzro5g-A" target="_57Av0ITpEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//GridNode/Right"/>
+      </edges>
+      <edges xmi:id="_7zOOoITpEeiDsrgzro5g-A" source="_6VynUITpEeiDsrgzro5g-A" target="_5xfncITpEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//PositionableEntity/On"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_3BAc1YTpEeiDsrgzro5g-A" name="Rhs">
+      <nodes xmi:id="_5xfncYTpEeiDsrgzro5g-A" outgoing="_sJPyQI5vEeiPxeNKuRy9oA">
+        <type href="http://www.geodes.org/Pacman#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_57Av0YTpEeiDsrgzro5g-A" incoming="_8HToQITpEeiDsrgzro5g-A _sJPyQI5vEeiPxeNKuRy9oA">
+        <type href="http://www.geodes.org/Pacman#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_6VynUYTpEeiDsrgzro5g-A" outgoing="_8HToQITpEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//MoveableEntity"/>
+        <attributes xmi:id="_3u7ucYUYEeiBFberwwvMbw" value="mover">
+          <type href="http://www.geodes.org/Pacman#//PositionableEntity/Id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_8HToQITpEeiDsrgzro5g-A" source="_6VynUYTpEeiDsrgzro5g-A" target="_57Av0YTpEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//PositionableEntity/On"/>
+      </edges>
+      <edges xmi:id="_sJPyQI5vEeiPxeNKuRy9oA" source="_5xfncYTpEeiDsrgzro5g-A" target="_57Av0YTpEeiDsrgzro5g-A">
+        <type href="http://www.geodes.org/Pacman#//GridNode/Right"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_5xfncoTpEeiDsrgzro5g-A" origin="_5xfncITpEeiDsrgzro5g-A" image="_5xfncYTpEeiDsrgzro5g-A"/>
+    <mappings xmi:id="_57Av0oTpEeiDsrgzro5g-A" origin="_57Av0ITpEeiDsrgzro5g-A" image="_57Av0YTpEeiDsrgzro5g-A"/>
+    <mappings xmi:id="_6VynUoTpEeiDsrgzro5g-A" origin="_6VynUITpEeiDsrgzro5g-A" image="_6VynUYTpEeiDsrgzro5g-A"/>
+  </units>
+</henshin:Module>

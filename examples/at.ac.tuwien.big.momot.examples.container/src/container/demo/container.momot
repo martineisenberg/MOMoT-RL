@@ -1,0 +1,104 @@
+
+
+import at.ac.tuwien.big.moea.^experiment.executor.listener.SeedRuntimePrintListener
+
+import at.ac.tuwien.big.momot.^search.^fitness.dimension.TransformationLengthDimension
+import container.ContainerPackage
+import container.ContainerModel
+import container.demo.ContainerUtils
+
+initialization = {
+	ContainerPackage.eINSTANCE.eClass();
+	System.out.println("Search started.");
+}
+
+search = {
+	model          = {
+		file       = "model/3S_8C.xmi"
+	}
+	solutionLength  = 15
+
+	transformations = {
+		modules = [ "transformations/container.henshin" ]
+		ignoreUnits = [
+			"container::containerModule::retrieveNonLastFromStack",
+			"container::containerModule::checkNextToRetrieveIsLast",
+			"container::containerModule::canRetrieveContainer",
+      		"container::containerModule::relocateNonLastOnStackToEmptyStack",      		
+      		"container::containerModule::relocateNonLastOnStackToNonEmptyStack",
+      		"container::containerModule::relocateLastOnStackToNonEmptyStack",
+      		"container::containerModule::checkIsLast",
+      		"container::containerModule::checkIsNotLast",
+      		"container::containerModule::checkTargetStackEmpty",
+      		"container::containerModule::RelocateLastOnStack",
+      		"container::containerModule::checkTargetStackNotEmpty",
+      		"container::containerModule::Relocate",
+      		"container::containerModule::Retrieve",
+      		"container::containerModule::RelocateNonLastOnStack",
+      		"container::containerModule::retrieveLastFromStack",
+      		"container::containerModule::checkContainerToRetrieveOnTopOfSuccessor",
+      		"container::containerModule::checkContainerToRetrieveLastOverall",
+      		"container::containerModule::retrieveOnTopOfSuccessorFromStack",
+      		"container::containerModule::retrieveLastOverallFromStack",
+      		"container::containerModule::RetrieveNormalLastOrNonLastOnStack",
+      		"container::containerModule::RetrieveNonLastOverall",
+      		"container::containerModule::relocateLastOnStackToNonEmptyTargetStack",
+      		"container::containerModule::relocateNonLastOnStackToEmptyTargetStack",      		
+      		"container::containerModule::relocateNonLastOnStackToNonEmptyTargetStack"     		
+      		
+      		
+    	]
+			
+	}
+
+	fitness         = {
+		objectives = {
+			SolutionLength : minimize new TransformationLengthDimension
+			//RetrievedContainers:  maximize { ContainerUtils.calculateRetrievedContainers(root as ContainerModel)  }
+			ContainerIndex: minimize {ContainerUtils.containerIndex(root as ContainerModel)}
+			RetrievedContainres:  maximize {ContainerUtils.noRetrievedContainers(root as ContainerModel)}
+		}
+	}
+
+	algorithms      = {
+	//	Random  : moea.createRandomSearch()
+		NSGAII  : moea.createNSGAII()
+	//	NSGAIII : moea.createNSGAIII()
+	}
+}
+
+experiment = {
+	populationSize    = 100
+	maxEvaluations    = 10000
+	nrRuns            = 1
+	progressListeners = [ new SeedRuntimePrintListener ]
+}
+
+analysis = {
+	indicators       = [ hypervolume generationalDistance ]
+	significance     = 0.01
+	show             = [ aggregateValues statisticalSignificance individualValues ]
+	outputFile       = "output/analysis/analysis.txt"
+	boxplotDirectory = "output/analysis/"
+	printOutput
+}
+
+results = {
+	objectives = {
+		outputFile      = "output/objectives/objective_values.txt"
+		printOutput
+	}
+
+	solutions  = {
+		outputFile      = "output/solutions/objective_values.txt"
+		outputDirectory = "output/solutions/"
+	}
+
+	models     = {
+		outputDirectory = "output/models/"
+	}
+}
+
+finalization = {
+	System.out.println("Search finished.");
+}

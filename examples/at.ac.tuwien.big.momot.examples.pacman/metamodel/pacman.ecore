@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="PacmanGame" nsURI="http://www.geodes.org/Pacman" nsPrefix="PacmanGame">
+  <eClassifiers xsi:type="ecore:EClass" name="GridNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Top" eType="#//GridNode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Bottom" eType="#//GridNode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Left" eType="#//GridNode"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Right" eType="#//GridNode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Food" eSuperTypes="#//PositionableEntity"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Pacman" eSuperTypes="#//MoveableEntity"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Ghost" eSuperTypes="#//MoveableEntity"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Scoreboard">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="score" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Game">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="gridnodes" upperBound="-1"
+        eType="#//GridNode" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scoreboard" lowerBound="1"
+        eType="#//Scoreboard" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entites" upperBound="-1"
+        eType="#//PositionableEntity" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PositionableEntity" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="On" lowerBound="1" eType="#//GridNode"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MoveableEntity" abstract="true" eSuperTypes="#//PositionableEntity"/>
+</ecore:EPackage>

@@ -1,0 +1,40 @@
+Reference Set:
+
+2.0976176963403033 1.0 
+0.8944271909999159 2.0 
+
+QLearning
+Approximation Set:
+[2.0976176963403033, 1.0]
+[0.8944271909999159, 2.0]
+Average: 0.0
+Standard Deviation: 0.0
+Max: 0.0
+Min: 0.0
+Count: 30
+Converged after iter. (avg): 0.0
+
+
+NSGAII
+Approximation Set:
+[0.8944271909999159, 2.0]
+[2.0976176963403033, 1.0]
+Average: 0.0
+Standard Deviation: 0.0
+Max: 0.0
+Min: 0.0
+Count: 30
+Converged after iter. (avg): 0.0
+
+
+QLearningExplore
+Approximation Set:
+[2.0976176963403033, 1.0]
+[0.8944271909999159, 2.0]
+Average: 0.0
+Standard Deviation: 0.0
+Max: 0.0
+Min: 0.0
+Count: 30
+Converged after iter. (avg): 0.0
+

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_jkCc0IWkEeigPsf6foAq3Q">
+  <imports href="../metamodel/pacman.ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_o2fN4IWkEeigPsf6foAq3Q" name="eat">
+    <parameters xmi:id="_o2fN4YWkEeigPsf6foAq3Q" name="score_value" kind="VAR"/>
+    <lhs xmi:id="_o2fN4oWkEeigPsf6foAq3Q" name="Lhs">
+      <nodes xmi:id="_o2fN44WkEeigPsf6foAq3Q" outgoing="_o2fN6YWkEeigPsf6foAq3Q _o2fN6oWkEeigPsf6foAq3Q _o2fN64WkEeigPsf6foAq3Q _o2fN7IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game"/>
+      </nodes>
+      <nodes xmi:id="_o2fN5IWkEeigPsf6foAq3Q" incoming="_o2fN6YWkEeigPsf6foAq3Q _o2fN7YWkEeigPsf6foAq3Q _o2fN7oWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_o2fN5YWkEeigPsf6foAq3Q" incoming="_o2fN6oWkEeigPsf6foAq3Q" outgoing="_o2fN7oWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Pacman"/>
+      </nodes>
+      <nodes xmi:id="_o2fN5oWkEeigPsf6foAq3Q" incoming="_o2fN64WkEeigPsf6foAq3Q" outgoing="_o2fN7YWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Food"/>
+      </nodes>
+      <nodes xmi:id="_o2fN54WkEeigPsf6foAq3Q" incoming="_o2fN7IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Scoreboard"/>
+        <attributes xmi:id="_o2fN6IWkEeigPsf6foAq3Q" value="score_value">
+          <type href="../metamodel/pacman.ecore#//Scoreboard/score"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_o2fN6YWkEeigPsf6foAq3Q" source="_o2fN44WkEeigPsf6foAq3Q" target="_o2fN5IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/gridnodes"/>
+      </edges>
+      <edges xmi:id="_o2fN6oWkEeigPsf6foAq3Q" source="_o2fN44WkEeigPsf6foAq3Q" target="_o2fN5YWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_o2fN64WkEeigPsf6foAq3Q" source="_o2fN44WkEeigPsf6foAq3Q" target="_o2fN5oWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_o2fN7IWkEeigPsf6foAq3Q" source="_o2fN44WkEeigPsf6foAq3Q" target="_o2fN54WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/scoreboard"/>
+      </edges>
+      <edges xmi:id="_o2fN7YWkEeigPsf6foAq3Q" source="_o2fN5oWkEeigPsf6foAq3Q" target="_o2fN5IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+      <edges xmi:id="_o2fN7oWkEeigPsf6foAq3Q" source="_o2fN5YWkEeigPsf6foAq3Q" target="_o2fN5IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_o2fN74WkEeigPsf6foAq3Q" name="Rhs">
+      <nodes xmi:id="_o2fN8IWkEeigPsf6foAq3Q" outgoing="_o2fN9YWkEeigPsf6foAq3Q _o2fN9oWkEeigPsf6foAq3Q _o2fN94WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game"/>
+      </nodes>
+      <nodes xmi:id="_o2fN8YWkEeigPsf6foAq3Q" incoming="_o2fN9YWkEeigPsf6foAq3Q _o2fN-IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_o2fN8oWkEeigPsf6foAq3Q" incoming="_o2fN9oWkEeigPsf6foAq3Q" outgoing="_o2fN-IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Pacman"/>
+      </nodes>
+      <nodes xmi:id="_o2fN84WkEeigPsf6foAq3Q" incoming="_o2fN94WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Scoreboard"/>
+        <attributes xmi:id="_o2fN9IWkEeigPsf6foAq3Q" value="score_value+1">
+          <type href="../metamodel/pacman.ecore#//Scoreboard/score"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_o2fN9YWkEeigPsf6foAq3Q" source="_o2fN8IWkEeigPsf6foAq3Q" target="_o2fN8YWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/gridnodes"/>
+      </edges>
+      <edges xmi:id="_o2fN9oWkEeigPsf6foAq3Q" source="_o2fN8IWkEeigPsf6foAq3Q" target="_o2fN8oWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_o2fN94WkEeigPsf6foAq3Q" source="_o2fN8IWkEeigPsf6foAq3Q" target="_o2fN84WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/scoreboard"/>
+      </edges>
+      <edges xmi:id="_o2fN-IWkEeigPsf6foAq3Q" source="_o2fN8oWkEeigPsf6foAq3Q" target="_o2fN8YWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_o2fN-YWkEeigPsf6foAq3Q" origin="_o2fN44WkEeigPsf6foAq3Q" image="_o2fN8IWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_o2fN-oWkEeigPsf6foAq3Q" origin="_o2fN5IWkEeigPsf6foAq3Q" image="_o2fN8YWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_o2fN-4WkEeigPsf6foAq3Q" origin="_o2fN5YWkEeigPsf6foAq3Q" image="_o2fN8oWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_o2fN_IWkEeigPsf6foAq3Q" origin="_o2fN54WkEeigPsf6foAq3Q" image="_o2fN84WkEeigPsf6foAq3Q"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_s65egIWkEeigPsf6foAq3Q" name="kill">
+    <lhs xmi:id="_s65egYWkEeigPsf6foAq3Q" name="Lhs">
+      <nodes xmi:id="_s65egoWkEeigPsf6foAq3Q" outgoing="_s65ehoWkEeigPsf6foAq3Q _s65eh4WkEeigPsf6foAq3Q _s65eiIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game"/>
+      </nodes>
+      <nodes xmi:id="_s65eg4WkEeigPsf6foAq3Q" incoming="_s65ehoWkEeigPsf6foAq3Q _s65eiYWkEeigPsf6foAq3Q _s65eioWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_s65ehIWkEeigPsf6foAq3Q" incoming="_s65eiIWkEeigPsf6foAq3Q" outgoing="_s65eioWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Pacman"/>
+      </nodes>
+      <nodes xmi:id="_s65ehYWkEeigPsf6foAq3Q" incoming="_s65eh4WkEeigPsf6foAq3Q" outgoing="_s65eiYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Ghost"/>
+      </nodes>
+      <edges xmi:id="_s65ehoWkEeigPsf6foAq3Q" source="_s65egoWkEeigPsf6foAq3Q" target="_s65eg4WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/gridnodes"/>
+      </edges>
+      <edges xmi:id="_s65eh4WkEeigPsf6foAq3Q" source="_s65egoWkEeigPsf6foAq3Q" target="_s65ehYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_s65eiIWkEeigPsf6foAq3Q" source="_s65egoWkEeigPsf6foAq3Q" target="_s65ehIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_s65eiYWkEeigPsf6foAq3Q" source="_s65ehYWkEeigPsf6foAq3Q" target="_s65eg4WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+      <edges xmi:id="_s65eioWkEeigPsf6foAq3Q" source="_s65ehIWkEeigPsf6foAq3Q" target="_s65eg4WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_s65ei4WkEeigPsf6foAq3Q" name="Rhs">
+      <nodes xmi:id="_s65ejIWkEeigPsf6foAq3Q" outgoing="_s65ej4WkEeigPsf6foAq3Q _s65ekIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game"/>
+      </nodes>
+      <nodes xmi:id="_s65ejYWkEeigPsf6foAq3Q" incoming="_s65ej4WkEeigPsf6foAq3Q _s65ekYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_s65ejoWkEeigPsf6foAq3Q" incoming="_s65ekIWkEeigPsf6foAq3Q" outgoing="_s65ekYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Ghost"/>
+      </nodes>
+      <edges xmi:id="_s65ej4WkEeigPsf6foAq3Q" source="_s65ejIWkEeigPsf6foAq3Q" target="_s65ejYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/gridnodes"/>
+      </edges>
+      <edges xmi:id="_s65ekIWkEeigPsf6foAq3Q" source="_s65ejIWkEeigPsf6foAq3Q" target="_s65ejoWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//Game/entites"/>
+      </edges>
+      <edges xmi:id="_s65ekYWkEeigPsf6foAq3Q" source="_s65ejoWkEeigPsf6foAq3Q" target="_s65ejYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_s65ekoWkEeigPsf6foAq3Q" origin="_s65egoWkEeigPsf6foAq3Q" image="_s65ejIWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_s65ek4WkEeigPsf6foAq3Q" origin="_s65eg4WkEeigPsf6foAq3Q" image="_s65ejYWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_s65elIWkEeigPsf6foAq3Q" origin="_s65ehYWkEeigPsf6foAq3Q" image="_s65ejoWkEeigPsf6foAq3Q"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_wYxTkIWkEeigPsf6foAq3Q" name="moveDown">
+    <lhs xmi:id="_wYxTkYWkEeigPsf6foAq3Q" name="Lhs">
+      <nodes xmi:id="_wYxTkoWkEeigPsf6foAq3Q" incoming="_wYxTlYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_wYxTk4WkEeigPsf6foAq3Q" incoming="_wYxTloWkEeigPsf6foAq3Q" outgoing="_wYxTlYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_wYxTlIWkEeigPsf6foAq3Q" outgoing="_wYxTloWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//MoveableEntity"/>
+      </nodes>
+      <edges xmi:id="_wYxTlYWkEeigPsf6foAq3Q" source="_wYxTk4WkEeigPsf6foAq3Q" target="_wYxTkoWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode/Bottom"/>
+      </edges>
+      <edges xmi:id="_wYxTloWkEeigPsf6foAq3Q" source="_wYxTlIWkEeigPsf6foAq3Q" target="_wYxTk4WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_wYxTl4WkEeigPsf6foAq3Q" name="Rhs">
+      <nodes xmi:id="_wYxTmIWkEeigPsf6foAq3Q" incoming="_wYxTm4WkEeigPsf6foAq3Q _wYxTnIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_wYxTmYWkEeigPsf6foAq3Q" outgoing="_wYxTm4WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_wYxTmoWkEeigPsf6foAq3Q" outgoing="_wYxTnIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity"/>
+      </nodes>
+      <edges xmi:id="_wYxTm4WkEeigPsf6foAq3Q" source="_wYxTmYWkEeigPsf6foAq3Q" target="_wYxTmIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode/Bottom"/>
+      </edges>
+      <edges xmi:id="_wYxTnIWkEeigPsf6foAq3Q" source="_wYxTmoWkEeigPsf6foAq3Q" target="_wYxTmIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_wYxTnYWkEeigPsf6foAq3Q" origin="_wYxTkoWkEeigPsf6foAq3Q" image="_wYxTmIWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_wYxTnoWkEeigPsf6foAq3Q" origin="_wYxTk4WkEeigPsf6foAq3Q" image="_wYxTmYWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_wYxTn4WkEeigPsf6foAq3Q" origin="_wYxTlIWkEeigPsf6foAq3Q" image="_wYxTmoWkEeigPsf6foAq3Q"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_zk-J0IWkEeigPsf6foAq3Q" name="moveLeft">
+    <lhs xmi:id="_zk-J0YWkEeigPsf6foAq3Q" name="Lhs">
+      <nodes xmi:id="_zk-J0oWkEeigPsf6foAq3Q" incoming="_zk-J1YWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_zk-J04WkEeigPsf6foAq3Q" incoming="_zk-J1oWkEeigPsf6foAq3Q" outgoing="_zk-J1YWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_zk-J1IWkEeigPsf6foAq3Q" outgoing="_zk-J1oWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//MoveableEntity"/>
+      </nodes>
+      <edges xmi:id="_zk-J1YWkEeigPsf6foAq3Q" source="_zk-J04WkEeigPsf6foAq3Q" target="_zk-J0oWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode/Left"/>
+      </edges>
+      <edges xmi:id="_zk-J1oWkEeigPsf6foAq3Q" source="_zk-J1IWkEeigPsf6foAq3Q" target="_zk-J04WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_zk-J14WkEeigPsf6foAq3Q" name="Rhs">
+      <nodes xmi:id="_zk-J2IWkEeigPsf6foAq3Q" incoming="_zk-J24WkEeigPsf6foAq3Q _zk-J3IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_zk-J2YWkEeigPsf6foAq3Q" outgoing="_zk-J24WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_zk-J2oWkEeigPsf6foAq3Q" outgoing="_zk-J3IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity"/>
+      </nodes>
+      <edges xmi:id="_zk-J24WkEeigPsf6foAq3Q" source="_zk-J2YWkEeigPsf6foAq3Q" target="_zk-J2IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode/Left"/>
+      </edges>
+      <edges xmi:id="_zk-J3IWkEeigPsf6foAq3Q" source="_zk-J2oWkEeigPsf6foAq3Q" target="_zk-J2IWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_zk-J3YWkEeigPsf6foAq3Q" origin="_zk-J0oWkEeigPsf6foAq3Q" image="_zk-J2IWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_zk-J3oWkEeigPsf6foAq3Q" origin="_zk-J04WkEeigPsf6foAq3Q" image="_zk-J2YWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_zk-J34WkEeigPsf6foAq3Q" origin="_zk-J1IWkEeigPsf6foAq3Q" image="_zk-J2oWkEeigPsf6foAq3Q"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_04Dia4WkEeigPsf6foAq3Q" name="moveRight">
+    <lhs xmi:id="_04DibIWkEeigPsf6foAq3Q" name="Lhs">
+      <nodes xmi:id="_04DibYWkEeigPsf6foAq3Q" incoming="_04DicYWkEeigPsf6foAq3Q" outgoing="_befAEIWmEeijDqzqI5Jk0g">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_04DiboWkEeigPsf6foAq3Q" incoming="_befAEIWmEeijDqzqI5Jk0g">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_04Dib4WkEeigPsf6foAq3Q" outgoing="_04DicYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//MoveableEntity"/>
+      </nodes>
+      <edges xmi:id="_04DicYWkEeigPsf6foAq3Q" source="_04Dib4WkEeigPsf6foAq3Q" target="_04DibYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+      <edges xmi:id="_befAEIWmEeijDqzqI5Jk0g" source="_04DibYWkEeigPsf6foAq3Q" target="_04DiboWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode/Right"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_04DicoWkEeigPsf6foAq3Q" name="Rhs">
+      <nodes xmi:id="_04Dic4WkEeigPsf6foAq3Q" outgoing="_befnIIWmEeijDqzqI5Jk0g">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_04DidIWkEeigPsf6foAq3Q" incoming="_04Did4WkEeigPsf6foAq3Q _befnIIWmEeijDqzqI5Jk0g">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_04DidYWkEeigPsf6foAq3Q" outgoing="_04Did4WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity"/>
+      </nodes>
+      <edges xmi:id="_04Did4WkEeigPsf6foAq3Q" source="_04DidYWkEeigPsf6foAq3Q" target="_04DidIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+      <edges xmi:id="_befnIIWmEeijDqzqI5Jk0g" source="_04Dic4WkEeigPsf6foAq3Q" target="_04DidIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode/Right"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_04DieIWkEeigPsf6foAq3Q" origin="_04DibYWkEeigPsf6foAq3Q" image="_04Dic4WkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_04DieYWkEeigPsf6foAq3Q" origin="_04DiboWkEeigPsf6foAq3Q" image="_04DidIWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_04DieoWkEeigPsf6foAq3Q" origin="_04Dib4WkEeigPsf6foAq3Q" image="_04DidYWkEeigPsf6foAq3Q"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_20RXYIWkEeigPsf6foAq3Q" name="moveUp">
+    <lhs xmi:id="_20RXYYWkEeigPsf6foAq3Q" name="Lhs">
+      <nodes xmi:id="_20RXYoWkEeigPsf6foAq3Q" incoming="_20RXZoWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_20RXY4WkEeigPsf6foAq3Q" incoming="_20RXZYWkEeigPsf6foAq3Q" outgoing="_20RXZoWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_20RXZIWkEeigPsf6foAq3Q" outgoing="_20RXZYWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//MoveableEntity"/>
+      </nodes>
+      <edges xmi:id="_20RXZYWkEeigPsf6foAq3Q" source="_20RXZIWkEeigPsf6foAq3Q" target="_20RXY4WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+      <edges xmi:id="_20RXZoWkEeigPsf6foAq3Q" source="_20RXY4WkEeigPsf6foAq3Q" target="_20RXYoWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode/Top"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_20RXZ4WkEeigPsf6foAq3Q" name="Rhs">
+      <nodes xmi:id="_20RXaIWkEeigPsf6foAq3Q" incoming="_20RXa4WkEeigPsf6foAq3Q _20RXbIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_20RXaYWkEeigPsf6foAq3Q" outgoing="_20RXa4WkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode"/>
+      </nodes>
+      <nodes xmi:id="_20RXaoWkEeigPsf6foAq3Q" outgoing="_20RXbIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity"/>
+      </nodes>
+      <edges xmi:id="_20RXa4WkEeigPsf6foAq3Q" source="_20RXaYWkEeigPsf6foAq3Q" target="_20RXaIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//GridNode/Top"/>
+      </edges>
+      <edges xmi:id="_20RXbIWkEeigPsf6foAq3Q" source="_20RXaoWkEeigPsf6foAq3Q" target="_20RXaIWkEeigPsf6foAq3Q">
+        <type href="../metamodel/pacman.ecore#//PositionableEntity/On"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_20RXbYWkEeigPsf6foAq3Q" origin="_20RXYoWkEeigPsf6foAq3Q" image="_20RXaIWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_20RXboWkEeigPsf6foAq3Q" origin="_20RXY4WkEeigPsf6foAq3Q" image="_20RXaYWkEeigPsf6foAq3Q"/>
+    <mappings xmi:id="_20RXb4WkEeigPsf6foAq3Q" origin="_20RXZIWkEeigPsf6foAq3Q" image="_20RXaoWkEeigPsf6foAq3Q"/>
+  </units>
+</henshin:Module>
